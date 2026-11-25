@@ -1,0 +1,24 @@
+.impact-stats{position:relative;isolation:isolate;overflow:hidden;padding:78px 0 84px;background:#092d43 url('/assets/bangalore-colleges/east-point-campus.webp') center 51%/cover no-repeat;color:#fff}
+.impact-stats::before{position:absolute;z-index:0;inset:0;background:linear-gradient(90deg,rgba(5,27,46,.9),rgba(5,45,67,.84) 48%,rgba(5,39,59,.86)),linear-gradient(0deg,rgba(5,28,43,.35),rgba(5,28,43,.12));content:""}
+.impact-stats::after{position:absolute;z-index:0;inset:0;background:radial-gradient(circle at 15% 15%,rgba(0,190,218,.18),transparent 35%),radial-gradient(circle at 88% 85%,rgba(255,194,29,.12),transparent 26%);pointer-events:none;content:""}
+.impact-stats-container{position:relative;z-index:1}
+.impact-stats-heading{max-width:760px;margin:0 auto 36px;text-align:center}
+.impact-stats-heading .eyebrow{color:#a9eaff}
+.impact-stats-heading h2{margin:10px 0;color:#fff;font-size:clamp(30px,3.5vw,44px);line-height:1.14;letter-spacing:-.035em}
+.impact-stats-heading h2 span{color:#ffd044}
+.impact-stats-heading p{margin:0;color:rgba(233,245,252,.82);font-size:14px;line-height:1.65}
+.impact-demo-notice{display:inline-block;margin-top:8px!important;padding:8px 12px;border:1px solid rgba(255,208,68,.52);border-radius:9px;background:rgba(7,33,52,.6);color:#ffe28c!important;font-size:11px!important;font-weight:750}
+.impact-stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.impact-stat-card{position:relative;display:flex;min-width:0;min-height:270px;flex-direction:column;align-items:center;justify-content:center;padding:31px 17px 24px;border:1px solid rgba(198,231,247,.28);border-radius:20px;background:rgba(7,33,52,.62);box-shadow:0 15px 40px rgba(0,12,26,.2);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);text-align:center;opacity:0;transform:translateY(24px);transition:opacity .55s ease,transform .55s cubic-bezier(.22,1,.36,1),border-color .22s ease,background .22s ease,box-shadow .22s ease;transition-delay:var(--card-delay,0ms)}
+.impact-stats.is-visible .impact-stat-card{opacity:1;transform:translateY(0)}
+.impact-stat-card:hover{transform:translateY(-5px);border-color:rgba(255,208,68,.78);background:rgba(7,39,59,.76);box-shadow:0 20px 46px rgba(0,12,26,.32),0 0 0 1px rgba(255,208,68,.14)}
+.impact-stat-icon{display:grid;width:70px;height:70px;flex:none;place-items:center;margin-bottom:17px;border:1px solid rgba(255,235,165,.82);border-radius:50%;background:linear-gradient(145deg,#ffdf73,#ffc528);box-shadow:0 8px 21px rgba(255,190,31,.28);color:#123d54;animation:impactIconPulse 2.8s ease-in-out infinite}
+.impact-stat-icon svg{width:30px;height:30px}
+@keyframes impactIconPulse{0%,100%{box-shadow:0 8px 21px rgba(255,190,31,.24);transform:scale(1)}50%{box-shadow:0 9px 30px rgba(255,201,40,.5);transform:scale(1.045)}}
+.impact-stat-accent{display:block;width:44px;height:5px;margin-bottom:14px;border-radius:5px;background:#ffd044;box-shadow:0 0 14px rgba(255,208,68,.42)}
+.impact-stat-value{display:block;color:#fff;font:800 clamp(36px,4vw,49px)/1 Outfit,Inter,Arial,sans-serif;letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.impact-stat-card h3{max-width:100%;margin:10px 0 0;color:#f4faff;font-size:14px;font-weight:780;line-height:1.45}
+.impact-stat-caption{margin-top:7px;color:#b8cfdb;font-size:10px;font-weight:600;line-height:1.45}
+@media(max-width:900px){.impact-stats{padding:68px 0 72px}.impact-stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.impact-stat-card{min-height:250px}}
+@media(max-width:600px){.impact-stats{padding:55px 0 60px;background-position:center 48%}.impact-stats-heading{margin-bottom:25px}.impact-stats-heading h2{font-size:31px}.impact-stats-heading p{font-size:12px}.impact-demo-notice{font-size:10px!important}.impact-stats-grid{grid-template-columns:1fr;gap:12px}.impact-stat-card{min-height:235px;padding:27px 16px 21px}.impact-stat-value{font-size:42px}.impact-stat-card h3{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.impact-stat-card{opacity:1;transform:none;transition:none}.impact-stat-card:hover{transform:none}.impact-stat-icon{animation:none}}

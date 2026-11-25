@@ -1,0 +1,16 @@
+.home-banner-carousel{position:relative;isolation:isolate;width:100%;aspect-ratio:20/7;overflow:hidden;background:#f4f9fb;touch-action:pan-y}
+.home-banner-viewport{position:absolute;inset:0;overflow:hidden}
+.home-banner-track{display:flex;width:800%;height:100%;will-change:transform}
+.home-banner-slide{position:relative;flex-shrink:0;height:100%;margin:0;display:grid;place-items:center;overflow:hidden}
+.home-banner-slide img{display:block;width:100%;height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.home-banner-arrow{position:absolute;z-index:3;top:50%;display:grid;place-items:center;width:48px;height:48px;padding:0;border:1px solid rgba(255,255,255,.76);border-radius:50%;color:#103c58;background:rgba(255,255,255,.5);box-shadow:0 8px 25px rgba(11,48,72,.16),inset 0 1px rgba(255,255,255,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);transform:translateY(-50%);transition:background .2s,box-shadow .2s,transform .2s}
+.home-banner-arrow:hover{background:rgba(255,255,255,.78);box-shadow:0 12px 30px rgba(11,48,72,.22),inset 0 1px rgba(255,255,255,.9);transform:translateY(-50%) scale(1.05)}
+.home-banner-arrow:focus-visible,.home-banner-dot:focus-visible{outline:3px solid #ffca28;outline-offset:3px}
+.home-banner-previous{left:clamp(10px,2.4vw,36px)}
+.home-banner-next{right:clamp(10px,2.4vw,36px)}
+.home-banner-pagination{position:absolute;z-index:3;left:50%;bottom:clamp(8px,1.6vw,18px);display:flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid rgba(255,255,255,.44);border-radius:999px;background:rgba(12,42,62,.32);box-shadow:0 6px 18px rgba(11,48,72,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transform:translateX(-50%)}
+.home-banner-dot{display:block;width:8px;height:8px;padding:0;border:0;border-radius:999px;background:rgba(255,255,255,.78);box-shadow:0 1px 3px rgba(0,0,0,.18);transition:width .24s ease,background .24s ease,transform .24s ease}
+.home-banner-dot:hover{transform:scale(1.18);background:#fff}
+.home-banner-dot.is-active{width:24px;background:#ffca28}
+@media(max-width:700px){.home-banner-arrow{width:38px;height:38px}.home-banner-arrow svg{width:21px;height:21px}.home-banner-pagination{gap:6px;padding:7px 9px}.home-banner-dot{width:7px;height:7px}.home-banner-dot.is-active{width:19px}}
+@media(prefers-reduced-motion:reduce){.home-banner-arrow,.home-banner-dot{transition:none}}

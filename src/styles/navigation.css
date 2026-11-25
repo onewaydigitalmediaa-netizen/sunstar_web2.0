@@ -1,0 +1,88 @@
+/* Keep the desktop navigation clear, bold and evenly spaced. */
+.skip-to-content{position:fixed;top:8px;left:8px;z-index:2000;padding:12px 16px;transform:translateY(-160%);border-radius:8px;background:#fff;color:#123650;font-weight:800;box-shadow:0 4px 18px rgba(0,30,48,.2)}
+.skip-to-content:focus{transform:translateY(0);outline:3px solid #0786ad;outline-offset:3px}
+.desktop-nav{flex:1;justify-content:space-evenly;gap:12px;margin:0 clamp(14px,2vw,28px)}
+.desktop-nav>a,.desktop-nav .college-nav-toggle{font-size:15px;font-weight:800;letter-spacing:-.01em}
+.college-nav{position:relative}
+.college-nav-toggle{display:flex;align-items:center;gap:5px;position:relative;border:0;background:none;padding:14px 0;font-size:15px;font-weight:800;letter-spacing:-.01em;color:#334958;white-space:nowrap}
+.college-nav-toggle:hover,.college-nav-toggle.nav-active{color:var(--primary-dark)}
+.college-nav-toggle svg{flex-shrink:0}
+.college-nav-toggle[aria-expanded=true]>svg{transform:rotate(180deg)}
+.college-nav-links{position:absolute;top:100%;left:0;min-width:310px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:var(--shadow)}
+.college-nav-links[hidden]{display:none}
+.desktop-nav .college-nav-links a{display:block;padding:12px;border-radius:7px;white-space:normal;line-height:1.5}
+.desktop-nav .college-nav-links a:hover,.desktop-nav .college-nav-links a.nav-active{background:var(--surface);color:var(--primary-dark)}
+.desktop-nav .college-nav-links a.nav-active::after{display:none}
+.mobile-menu{overflow-y:auto;overscroll-behavior:contain}
+.mobile-menu>*{flex-shrink:0}
+.college-nav-mobile .college-nav-toggle{width:100%;justify-content:space-between;border-bottom:1px solid var(--line);padding:14px 4px;font-size:inherit;font-weight:750;color:var(--ink)}
+.college-nav-mobile .college-nav-toggle.nav-active{color:var(--primary)}
+.college-nav-mobile .college-nav-links{position:static;min-width:0;padding:0 0 0 14px;border:0;border-radius:0;box-shadow:none;background:transparent}
+.college-nav-mobile .college-nav-links a{display:block;padding:13px 4px;border-bottom:1px solid var(--line);font-size:14px;font-weight:750;line-height:1.5}
+.college-nav-mobile .college-nav-links a:hover,.college-nav-mobile .college-nav-links a.nav-active{color:var(--primary)}
+@media(max-width:1250px){.desktop-nav{gap:9px;margin-inline:14px}.desktop-nav>a,.desktop-nav .college-nav-toggle{font-size:14px}.college-nav-toggle{font-size:14px}}
+@media(max-width:1180px){.desktop-nav{display:none}.mobile-toggle{display:flex}.nav-actions{margin-left:auto}}
+@media(min-width:1181px){.site-header .nav-inner{width:min(1500px,calc(100% - 112px))}.desktop-nav{max-width:850px;justify-content:space-between;gap:clamp(8px,1vw,16px);margin:0}}
+
+/* Continuous, full-width admission enquiry ticker inside the existing top strip. */
+/* Increase these duration values to slow the ticker down; decrease them to speed it up. */
+:root{--top-ticker-time-desktop:28s;--top-ticker-time-tablet:20s;--top-ticker-time-mobile:15s;--top-ticker-time-small:14s}
+@media(min-width:901px) and (max-width:1600px){:root{--top-ticker-time-desktop:22s}}
+.top-strip{background:#102D3A}
+.top-inner-announcement{width:100%;max-width:none;margin:0;padding:0 28px;justify-content:flex-start;overflow:hidden}
+.top-ticker{width:100%;height:100%;min-width:0;display:flex;align-items:center;overflow:hidden}
+.top-ticker-track{display:flex;align-items:center;flex:none;width:max-content;white-space:nowrap;will-change:transform;animation:topTickerScroll var(--top-ticker-time-desktop) linear infinite}
+.top-ticker.is-static{overflow-x:auto;scrollbar-width:none}
+.top-ticker.is-static::-webkit-scrollbar{display:none}
+.top-ticker.is-static .top-ticker-track{animation:none;transform:none}
+.top-ticker-sequence{display:flex;align-items:center;flex:none;gap:18px;padding-right:calc(100vw - 56px);white-space:nowrap}
+.top-inner-announcement .top-ticker-copy{display:inline;color:#fff;font-size:13px;font-weight:700}
+.top-inner-announcement .top-ticker-phone{display:inline-flex;align-items:center;gap:7px;flex:none;color:#fff;font-size:13px;font-weight:750;white-space:nowrap}
+.top-inner-announcement .top-ticker-phone:first-of-type{color:#44d7ff}
+.top-inner-announcement .top-ticker-phone:last-of-type{color:#ffca28}
+.top-inner-announcement .top-ticker-phone svg{flex:none;color:#ffca28}
+.top-inner-announcement .top-ticker-phone:hover{filter:brightness(1.15)}
+@keyframes topTickerScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* Keep the navigation logo inside the header. */
+.top-strip{height:48px}
+.site-header .brand img{width:190px;height:auto}
+@media(max-width:1060px){.site-header .brand img{width:180px}}
+@media(max-width:900px){.top-ticker-track{animation-duration:var(--top-ticker-time-tablet)}}
+@media(max-width:600px){.top-strip{height:40px}.top-inner-announcement{padding:0 15px}.top-ticker-sequence{gap:14px;padding-right:calc(100vw - 30px)}.top-ticker-track{animation-duration:var(--top-ticker-time-mobile)}.site-header .brand img{width:clamp(136px,40vw,160px)}}
+@media(max-width:450px){.top-ticker-track{animation-duration:var(--top-ticker-time-small)}}
+@media(prefers-reduced-motion:reduce){.top-ticker-track{animation:none;transform:none}.top-ticker{overflow-x:auto;scrollbar-width:none}.top-ticker::-webkit-scrollbar{display:none}}
+
+/* Rounded, floating navigation from the supplied reference. */
+.site-header.reference-navbar{height:auto;min-height:0;padding:12px 10px 20px;border:0;background:radial-gradient(ellipse at 85% 0%,rgba(255,250,218,.8),transparent 30%),linear-gradient(115deg,#c7f4ff,#65dafa 64%,#b8f2ff);box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.site-header.reference-navbar .nav-inner{position:relative;width:min(1500px,100%);min-height:76px;height:auto;padding:8px clamp(22px,4.6vw,52px);gap:clamp(18px,3vw,40px);border:1px solid rgba(255,255,255,.95);border-radius:30px;background:linear-gradient(110deg,rgba(255,255,255,.97),rgba(245,253,255,.88) 55%,rgba(237,253,255,.8));box-shadow:0 0 18px rgba(255,255,255,.7),inset 0 1px 2px #fff;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.site-header.reference-navbar .brand{display:flex;align-items:center;justify-content:center;align-self:center;padding:0;border:0;border-radius:0;background:none;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
+.site-header.reference-navbar .brand::after{display:none}
+.site-header.reference-navbar .brand img{display:block;width:158px;height:auto;max-height:none;filter:none;transform:translateY(-4px)}
+.reference-navbar .desktop-nav{display:flex;flex:1;max-width:850px;justify-content:space-between;gap:clamp(12px,1.7vw,26px);margin:0 0 0 auto}
+.reference-navbar .desktop-nav>a,.reference-navbar .desktop-nav .college-nav-toggle{font-size:12px;font-weight:800;letter-spacing:-.025em;color:#142c49;padding:12px 0}
+.reference-navbar .desktop-nav .nav-active{color:#076b8a}
+.reference-navbar .desktop-nav>a.nav-active::after{display:none}
+.reference-navbar .nav-indicator{height:3px;bottom:5px;border-radius:3px;background:#0da3ce}
+.reference-navbar .college-nav-toggle>svg{color:#0da3ce;width:12px}
+.reference-navbar .nav-actions{flex:none;gap:10px;margin:0}
+.reference-navbar .nav-search-toggle{display:grid;place-items:center;width:41px;height:41px;padding:0;border:1.5px solid #78dff7;border-radius:50%;color:#143955;background:linear-gradient(135deg,#e6fbff,#c7f3ff);box-shadow:inset 0 1px 3px #fff;transition:background .2s}
+.reference-navbar .nav-search-toggle:hover{background:#b9effc}
+.reference-navbar .nav-enquire{min-height:39px;padding:10px 18px;gap:10px;border:0;border-radius:999px;background:linear-gradient(180deg,#ffdf18,#ffc400 65%,#ffbc00);box-shadow:inset 0 2px 3px rgba(255,255,255,.55);font-size:12px;font-weight:800;color:#172b38}
+.reference-navbar .nav-enquire:hover{background:linear-gradient(180deg,#ffe644,#ffca00);box-shadow:0 4px 12px rgba(224,168,0,.2)}
+.reference-navbar .nav-enquire svg{display:block}
+.reference-navbar .mobile-toggle{display:none;border-radius:50%;border:1px solid #78dff7;background:#e0f8ff}
+.reference-navbar :is(a,button,input):focus-visible{outline:3px solid #0786ad;outline-offset:4px}
+.reference-navbar .nav-search-panel{position:absolute;right:22px;top:calc(100% + 10px);width:min(370px,calc(100% - 24px));padding:20px;border:1px solid #c6eaf4;border-radius:20px;background:#fff;box-shadow:0 12px 35px rgba(7,107,138,.18)}
+.nav-search-panel label{display:block;margin-bottom:10px;font-size:14px;font-weight:750;color:#173954}
+.nav-search-field{display:flex;gap:8px}
+.nav-search-field input{min-width:0;flex:1;padding:11px 12px;border:1px solid #b9dce8;border-radius:10px;font-size:13px;color:#142c49;background:#f5fcff}
+.nav-search-field button{display:grid;place-items:center;flex:none;width:42px;border:0;border-radius:10px;background:#ffcf0b;color:#142c49}
+@media(min-width:1280px){.reference-navbar .desktop-nav>a,.reference-navbar .desktop-nav .college-nav-toggle{font-size:14px}}
+@media(min-width:1001px) and (max-width:1100px){.site-header.reference-navbar .nav-inner{padding-inline:24px;gap:20px}.reference-navbar .desktop-nav{gap:14px}}
+@media(max-width:1000px){.reference-navbar .desktop-nav{display:none}.reference-navbar .mobile-toggle{display:flex}.reference-navbar .nav-actions{margin-left:auto}}
+@media(max-width:600px){.site-header.reference-navbar{padding:9px 8px 12px}.site-header.reference-navbar .nav-inner{min-height:66px;padding:8px 12px;gap:10px;border-radius:24px}.site-header.reference-navbar .brand img{width:130px;height:auto}.reference-navbar .nav-actions{gap:7px}.reference-navbar .nav-search-toggle,.reference-navbar .mobile-toggle{width:34px;height:34px}.reference-navbar .nav-enquire{min-height:34px;padding:9px 11px;gap:6px;font-size:10px}.reference-navbar .nav-enquire svg{width:14px}.reference-navbar .nav-search-panel{right:12px}}
+@media(max-width:380px){.site-header.reference-navbar .nav-inner{padding-inline:9px;gap:6px}.site-header.reference-navbar .brand img{width:108px}.reference-navbar .nav-actions{gap:5px}.reference-navbar .nav-enquire{padding-inline:8px}.reference-navbar .nav-enquire svg{display:none}}
+
+.college-card .card-arrow{width:auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:0 11px;font-size:11px;font-weight:800}
+.college-card .card-arrow:hover{transform:translateY(-2px)}

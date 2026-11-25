@@ -1,0 +1,12 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+import {ArrowUpRight,Search,ClipboardList,PhoneCall,CheckCircle2,FileText,BookOpen,AlertCircle} from 'lucide-react';
+import PageHeading from '../components/PageHeading.jsx';
+import Reveal from '../components/Reveal.jsx';
+const stages=[
+ {n:'01',icon:Search,title:'Explore your choices',text:'Search the college directory by stream and location. Make a shortlist based on your course interests.'},
+ {n:'02',icon:FileText,title:'Review admission requirements',text:'Check course eligibility, required documents and the application process with the institution.'},
+ {n:'03',icon:PhoneCall,title:'Speak with SUN STAR',text:'Send an enquiry or call. Tell us your preferred colleges, qualification and any questions.'},
+ {n:'04',icon:ClipboardList,title:'Confirm and apply',text:'Confirm current eligibility, available seats, documents, deadlines and the college’s official payment process.'}
+];
+export default function Admissions(){return <><PageHeading eyebrow="ADMISSIONS" title="Admissions, step by step." crumb="Admissions" description="A practical guide to exploring institutions and taking your next admission step with confidence."/><Reveal as="section" className="section"><div className="container admission-layout"><div><span className="eyebrow">HOW IT WORKS</span><h2>Your roadmap to <span>what's next.</span></h2><p className="lead">Each student and college may have different eligibility and admission rules. This is our general guidance journey—not a guarantee of admission.</p><div className="admission-steps">{stages.map(({n,title,text,icon:Icon})=><div className="admission-step" key={n}><span><Icon size={23}/></span><div><small>STEP {n}</small><h3>{title}</h3><p>{text}</p></div></div>)}</div><Link to="/enquiry" className="btn btn-primary">Start Your Enquiry <ArrowUpRight size={18}/></Link></div><aside className="admissions-sidebar"><div className="admissions-help"><BookOpen size={31}/><h3>Admission Guidance</h3><p>Get help comparing colleges, courses, eligibility and application requirements.</p><Link className="btn btn-yellow" to="/enquiry">Talk to a Counsellor <ArrowUpRight size={18}/></Link></div><div className="admissions-tip"><AlertCircle size={20}/><div><strong>Before applying</strong><p>Verify recognition, official eligibility, admission terms and application instructions directly with the college.</p></div></div></aside></div></Reveal></>}

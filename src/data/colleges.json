@@ -1,0 +1,1824 @@
+[
+  {
+    "id": 1,
+    "slug": "paavai-educational-institutions",
+    "name": "Paavai Educational Institutions",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare",
+      "Polytechnic",
+      "Education"
+    ],
+    "printedPage": 1,
+    "pdfPage": 4,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "IT",
+      "Cyber Security",
+      "ECE",
+      "Biomedical",
+      "Agriculture"
+    ],
+    "feeExample": {
+      "program": "Engineering CSE, AI&DS, IT – first year",
+      "amount": 138000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Autonomous engineering college; annual fee, printed p.1"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "mahendra-educational-institutions",
+    "name": "Mahendra Educational Institutions",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare"
+    ],
+    "printedPage": 4,
+    "pdfPage": 7,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "IT",
+      "Cyber Security",
+      "AI & Data Science",
+      "ECE",
+      "Mechanical",
+      "Civil"
+    ],
+    "feeExample": {
+      "program": "NKL-1 Engineering EEE/AERO/Civil – first year",
+      "amount": 90000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "NKL-1; annual fee, printed p.4"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "excel-group-institutions",
+    "name": "Excel Group Institutions",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare",
+      "Polytechnic"
+    ],
+    "printedPage": 7,
+    "pdfPage": 10,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "Artificial Intelligence & Data Science",
+      "ECE",
+      "Mechanical",
+      "MCA",
+      "MBA"
+    ],
+    "feeExample": {
+      "program": "B.E. / B.Tech CSE – first year",
+      "amount": 130000,
+      "category": "Management tuition fee",
+      "note": "Admission and other fees are listed separately, printed p.7"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "the-kavery-educational-institutions",
+    "name": "The Kavery Educational Institutions",
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare",
+      "Polytechnic"
+    ],
+    "printedPage": 13,
+    "pdfPage": 16,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "Artificial Intelligence & Data Science",
+      "IT",
+      "Biomedical",
+      "Civil"
+    ],
+    "feeExample": {
+      "program": "Engineering CSE / AI&DS – first year",
+      "amount": 90000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Autonomous engineering college; printed p.13"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "karpagam-group-of-institutions",
+    "name": "Karpagam Group of Institutions",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare"
+    ],
+    "printedPage": 15,
+    "pdfPage": 18,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "IT",
+      "Cyber Security",
+      "ECE",
+      "Mechanical"
+    ],
+    "feeExample": {
+      "program": "Engineering CSE / AI&DS / IT – first year",
+      "amount": 225000,
+      "category": "BC/MBC/OC · Management quota",
+      "note": "Engineering (Autonomous); printed p.15"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "hindustan-group-of-institutions",
+    "name": "Hindustan Group of Institutions",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare",
+      "Polytechnic"
+    ],
+    "printedPage": 18,
+    "pdfPage": 21,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.E. Aeronautical Engineering",
+      "amount": 126000,
+      "category": "Annual fee – column I",
+      "note": "College/column conditions in printed p.18"
+    }
+  },
+  {
+    "id": 7,
+    "slug": "erode-sengunthar-engineering-college",
+    "name": "Erode Sengunthar Engineering College",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 22,
+    "pdfPage": 25,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "IT",
+      "AI & Data Science",
+      "AI & Machine Learning",
+      "ECE",
+      "Civil"
+    ],
+    "feeExample": {
+      "program": "B.E. CSE / IT / AI&DS – first year",
+      "amount": 110000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.22"
+    }
+  },
+  {
+    "id": 8,
+    "slug": "shree-venkateshwara-group-of-institutions",
+    "name": "Shree Venkateshwara Group of Institutions",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare",
+      "Polytechnic"
+    ],
+    "printedPage": 23,
+    "pdfPage": 26,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.Tech CSE – first year",
+      "amount": 100000,
+      "category": "Management tuition fee",
+      "note": "Other charges/FG may apply, printed p.23"
+    }
+  },
+  {
+    "id": 9,
+    "slug": "sengunthar-group-of-institution-tiruchengode",
+    "name": "Sengunthar Group of Institution (Tiruchengode)",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Nursing",
+      "Pharmacy",
+      "Healthcare"
+    ],
+    "printedPage": 26,
+    "pdfPage": 29,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": null
+  },
+  {
+    "id": 10,
+    "slug": "gnanamani-college-of-technology",
+    "name": "Gnanamani College of Technology",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 28,
+    "pdfPage": 31,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "IT",
+      "ECE",
+      "Mechanical"
+    ],
+    "feeExample": {
+      "program": "CSE / AI&DS / IT / ECE – first year",
+      "amount": 108000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.28"
+    }
+  },
+  {
+    "id": 11,
+    "slug": "muthayammal-engineering-college",
+    "name": "Muthayammal Engineering College",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 29,
+    "pdfPage": 32,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "AI & Data Science",
+      "CSE",
+      "IT",
+      "ECE",
+      "Cyber Security"
+    ],
+    "feeExample": {
+      "program": "AI&DS / CSE / IT – first year",
+      "amount": 130000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.29"
+    }
+  },
+  {
+    "id": 12,
+    "slug": "sri-lakshmi-group-of-institutions",
+    "name": "Sri Lakshmi Group of Institutions",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Healthcare",
+    "streams": [
+      "Healthcare",
+      "Nursing",
+      "Pharmacy"
+    ],
+    "printedPage": 30,
+    "pdfPage": 33,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": null
+  },
+  {
+    "id": 13,
+    "slug": "selvam-college-of-technology",
+    "name": "Selvam College of Technology",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 31,
+    "pdfPage": 34,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.Tech AI&DS – first year",
+      "amount": 100000,
+      "category": "Management tuition fee",
+      "note": "Scholarships/other charges in printed p.31"
+    }
+  },
+  {
+    "id": 14,
+    "slug": "j-k-k-munirajah-group-of-institutions-tn-palayam",
+    "name": "J.K.K. Munirajah Group of Institutions (TN Palayam)",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Pharmacy",
+      "Healthcare",
+      "Polytechnic",
+      "Education"
+    ],
+    "printedPage": 32,
+    "pdfPage": 35,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": null
+  },
+  {
+    "id": 15,
+    "slug": "al-ameen-engineering-college-autonomous",
+    "name": "Al-Ameen Engineering College (Autonomous)",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 35,
+    "pdfPage": 38,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "IT",
+      "ECE",
+      "EEE",
+      "Mechanical"
+    ],
+    "feeExample": {
+      "program": "CSE / AI&DS / IT – first year",
+      "amount": 60000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Other fees listed separately, printed p.35"
+    }
+  },
+  {
+    "id": 16,
+    "slug": "annapoorana-engineering-college-autonomous",
+    "name": "Annapoorana Engineering College (Autonomous)",
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 36,
+    "pdfPage": 39,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "IT",
+      "Automobile",
+      "Civil",
+      "ECE"
+    ],
+    "feeExample": {
+      "program": "CSE / AI&DS / IT – first year",
+      "amount": 100000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.36"
+    }
+  },
+  {
+    "id": 17,
+    "slug": "shree-sakthi-engineering-college-autonomous",
+    "name": "Shree Sakthi Engineering College (Autonomous)",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 37,
+    "pdfPage": 40,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "AI & Machine Learning",
+      "CSE",
+      "Cyber Security",
+      "ECE",
+      "IT",
+      "AI & Data Science"
+    ],
+    "feeExample": {
+      "program": "AI&ML / CSE / Cyber Security – first year",
+      "amount": 125000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Additional fees in printed p.37"
+    }
+  },
+  {
+    "id": 18,
+    "slug": "kathir-college-of-engineering",
+    "name": "Kathir College of Engineering",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science"
+    ],
+    "printedPage": 38,
+    "pdfPage": 41,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "AI & Data Science",
+      "CSE",
+      "AI & Machine Learning",
+      "ECE",
+      "Civil",
+      "Mechanical"
+    ],
+    "feeExample": {
+      "program": "AI&DS / CSE / AI&ML – first year",
+      "amount": 90000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Additional fees in printed p.38"
+    }
+  },
+  {
+    "id": 19,
+    "slug": "study-world-college-of-engineering",
+    "name": "Study World College of Engineering",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 40,
+    "pdfPage": 43,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "IT",
+      "AI & Machine Learning",
+      "ECE"
+    ],
+    "feeExample": {
+      "program": "AI&DS / IT / CSE / AI&ML – first year",
+      "amount": 90000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.40"
+    }
+  },
+  {
+    "id": 20,
+    "slug": "sri-ranganathar-institute-of-engineering-technology",
+    "name": "Sri Ranganathar Institute of Engineering & Technology",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 41,
+    "pdfPage": 44,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "IT",
+      "Cyber Security",
+      "ECE",
+      "Mechanical"
+    ],
+    "feeExample": {
+      "program": "CSE / AI&DS / IT – first year",
+      "amount": 110000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.41"
+    }
+  },
+  {
+    "id": 21,
+    "slug": "ppg-group-of-institutions",
+    "name": "PPG Group of Institutions",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare",
+      "Nursing",
+      "Pharmacy"
+    ],
+    "printedPage": 42,
+    "pdfPage": 45,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "AI & Data Science",
+      "CSE",
+      "IT",
+      "AI & Machine Learning",
+      "ECE"
+    ],
+    "feeExample": {
+      "program": "AI&DS / CSE / IT / AI&ML – first year",
+      "amount": 110000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Autonomous engineering, printed p.42"
+    }
+  },
+  {
+    "id": 22,
+    "slug": "nehru-group-of-institutions",
+    "name": "Nehru Group of Institutions",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Healthcare",
+      "Nursing"
+    ],
+    "printedPage": 44,
+    "pdfPage": 47,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": null
+  },
+  {
+    "id": 23,
+    "slug": "m-p-nachimuthu-m-jaganathan-engineering-college",
+    "name": "M.P. Nachimuthu M. Jaganathan Engineering College",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 46,
+    "pdfPage": 49,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "IT",
+      "ECE",
+      "Mechanical",
+      "Civil",
+      "EEE"
+    ],
+    "feeExample": {
+      "program": "CSE / IT / ECE – first year",
+      "amount": 60000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.46"
+    }
+  },
+  {
+    "id": 24,
+    "slug": "easa-college-of-engineering-and-technology",
+    "name": "EASA College of Engineering and Technology",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 47,
+    "pdfPage": 50,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "IT",
+      "AI & Data Science",
+      "Cyber Security",
+      "AI & Machine Learning",
+      "ECE"
+    ],
+    "feeExample": {
+      "program": "CSE / IT / AI&DS – first year",
+      "amount": 120000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.47"
+    }
+  },
+  {
+    "id": 25,
+    "slug": "info-institute-of-engineering",
+    "name": "INFO Institute of Engineering",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 48,
+    "pdfPage": 51,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "IT",
+      "ECE",
+      "EEE",
+      "Mechanical"
+    ],
+    "feeExample": {
+      "program": "CSE / AI&DS / IT – first year",
+      "amount": 110000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.48"
+    }
+  },
+  {
+    "id": 26,
+    "slug": "dhanalakshmi-srinivasan-college-of-engineering",
+    "name": "Dhanalakshmi Srinivasan College of Engineering",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 49,
+    "pdfPage": 52,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "AI & Data Science",
+      "CSE",
+      "ECE",
+      "Biomedical",
+      "Food Technology",
+      "Cyber Security"
+    ],
+    "feeExample": {
+      "program": "AI&DS / CSE – first year",
+      "amount": 135000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.49"
+    }
+  },
+  {
+    "id": 27,
+    "slug": "coimbatore-institute-of-engineering-and-technology",
+    "name": "Coimbatore Institute of Engineering and Technology",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 50,
+    "pdfPage": 53,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "Cyber Security",
+      "CSE",
+      "IT",
+      "AI & Data Science",
+      "ECE",
+      "AI & Machine Learning"
+    ],
+    "feeExample": {
+      "program": "Cyber Security / CSE / IT – first year",
+      "amount": 90000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.50"
+    }
+  },
+  {
+    "id": 28,
+    "slug": "builders-engineering-college",
+    "name": "Builders Engineering College",
+    "city": "Tiruppur",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 51,
+    "pdfPage": 54,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "Cyber Security",
+      "AI & Data Science",
+      "CSE",
+      "IT",
+      "ECE",
+      "Mechanical"
+    ],
+    "feeExample": {
+      "program": "Cyber Security / AI&DS – first year",
+      "amount": 90000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.51"
+    }
+  },
+  {
+    "id": 29,
+    "slug": "sri-sai-ranganathan-engineering-college",
+    "name": "Sri Sai Ranganathan Engineering College",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Nursing",
+      "Pharmacy"
+    ],
+    "printedPage": 52,
+    "pdfPage": 55,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": null
+  },
+  {
+    "id": 30,
+    "slug": "vinayaga-mission-kirupananda-variyar-engineering-college",
+    "name": "Vinayaga Mission Kirupananda Variyar Engineering College",
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 53,
+    "pdfPage": 56,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "AI&DS / CSE / IT / AI&ML – first year",
+      "amount": 120000,
+      "category": "Yearly fee",
+      "note": "See printed p.53 for separate additional charges"
+    }
+  },
+  {
+    "id": 31,
+    "slug": "kit-kalaignarkarunanidhi-institute-of-technology",
+    "name": "KIT - Kalaignarkarunanidhi Institute of Technology",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 55,
+    "pdfPage": 57,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "Computer Science & Business Systems",
+      "AI & Machine Learning",
+      "Cyber Security"
+    ],
+    "feeExample": {
+      "program": "CSE / AI&DS / CSBS / AI&ML – first year",
+      "amount": 110000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.55"
+    }
+  },
+  {
+    "id": 32,
+    "slug": "nandha-educational-institutions",
+    "name": "Nandha Educational Institutions",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Healthcare",
+      "Pharmacy",
+      "Polytechnic"
+    ],
+    "printedPage": 56,
+    "pdfPage": 58,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "AI & Data Science",
+      "CSE",
+      "IT",
+      "Cyber Security",
+      "ECE",
+      "Civil"
+    ],
+    "feeExample": {
+      "program": "AI&DS / CSE / IT / Cyber Security – first year",
+      "amount": 120000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Engineering college, printed p.56"
+    }
+  },
+  {
+    "id": 33,
+    "slug": "adithya-institute-of-technology",
+    "name": "Adithya Institute of Technology",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 59,
+    "pdfPage": 61,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "IT",
+      "AI & Data Science",
+      "ECE",
+      "EEE",
+      "Civil"
+    ],
+    "feeExample": {
+      "program": "CSE / IT – first year",
+      "amount": 120000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.59"
+    }
+  },
+  {
+    "id": 34,
+    "slug": "sasurie-college-of-engineering-autonomous",
+    "name": "Sasurie College of Engineering (Autonomous)",
+    "city": "Tiruppur",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Healthcare",
+      "Education",
+      "Arts & Science"
+    ],
+    "printedPage": 61,
+    "pdfPage": 63,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.E. CSE – regular programme",
+      "amount": 150000,
+      "category": "Management tuition fee",
+      "note": "Additional admission fee, printed p.61"
+    }
+  },
+  {
+    "id": 35,
+    "slug": "sri-shanmugha-educational-institutions",
+    "name": "Sri Shanmugha Educational Institutions",
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Healthcare",
+      "Pharmacy"
+    ],
+    "printedPage": 63,
+    "pdfPage": 65,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.E. CSE – first year",
+      "amount": 105000,
+      "category": "Management tuition fee",
+      "note": "Additional charges may apply, printed p.63"
+    }
+  },
+  {
+    "id": 36,
+    "slug": "jkk-nataraja-educational-institutions",
+    "name": "JKK Nataraja Educational Institutions",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Nursing",
+      "Healthcare",
+      "Pharmacy"
+    ],
+    "printedPage": 64,
+    "pdfPage": 66,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "CSE / IT – first year",
+      "amount": 65000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Engineering college, printed p.64"
+    }
+  },
+  {
+    "id": 37,
+    "slug": "rvs-group-of-institutions",
+    "name": "RVS Group of Institutions",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Healthcare",
+      "Nursing",
+      "Pharmacy",
+      "Polytechnic"
+    ],
+    "printedPage": 66,
+    "pdfPage": 68,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "AI&DS / CSE – first year",
+      "amount": 125000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.66"
+    }
+  },
+  {
+    "id": 38,
+    "slug": "r-p-sarathy-institute-of-technology",
+    "name": "R.P. Sarathy Institute of Technology",
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 68,
+    "pdfPage": 70,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "IT",
+      "Cyber Security",
+      "ECE",
+      "CSE",
+      "AI & Data Science",
+      "EEE"
+    ],
+    "feeExample": {
+      "program": "IT / Cyber Security / ECE – first year",
+      "amount": 105000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.68"
+    }
+  },
+  {
+    "id": 39,
+    "slug": "ganesh-college-of-engineering",
+    "name": "Ganesh College of Engineering",
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 69,
+    "pdfPage": 71,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "AI&DS / CSE / IT – first year",
+      "amount": 85000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.69"
+    }
+  },
+  {
+    "id": 40,
+    "slug": "united-educational-institutions",
+    "name": "United Educational Institutions",
+    "city": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Healthcare",
+      "Nursing",
+      "Pharmacy"
+    ],
+    "printedPage": 70,
+    "pdfPage": 72,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.E. CSE – first year",
+      "amount": 120000,
+      "category": "Government quota",
+      "note": "Additional training/placement and admission fees, printed p.70"
+    }
+  },
+  {
+    "id": 41,
+    "slug": "vivekanandha-educational-institutions",
+    "name": "Vivekanandha Educational Institutions",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Nursing",
+      "Pharmacy",
+      "Healthcare"
+    ],
+    "printedPage": 76,
+    "pdfPage": 78,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Machine Learning",
+      "IT",
+      "AI & Data Science",
+      "Biotechnology"
+    ],
+    "feeExample": {
+      "program": "CSE / AI&ML / IT / AI&DS – first year",
+      "amount": 123000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.77"
+    }
+  },
+  {
+    "id": 42,
+    "slug": "deepthi-college-of-nursing",
+    "name": "Deepthi College of Nursing",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Nursing",
+    "streams": [
+      "Nursing"
+    ],
+    "printedPage": 79,
+    "pdfPage": 81,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "B.Sc. Nursing"
+    ],
+    "feeExample": {
+      "program": "Nursing tuition including hostel",
+      "amount": 200000,
+      "category": "Published package",
+      "note": "Admission, book/uniform separate; printed p.79"
+    }
+  },
+  {
+    "id": 43,
+    "slug": "dhanvantri-college-of-nursing",
+    "name": "Dhanvantri College of Nursing",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Nursing",
+    "streams": [
+      "Nursing"
+    ],
+    "printedPage": 80,
+    "pdfPage": 82,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "B.Sc. Nursing",
+      "B.Sc. Accident & Emergency Care",
+      "Operation Theatre & Anaesthesia"
+    ],
+    "feeExample": {
+      "program": "B.Sc. Nursing – first year (girls/boys)",
+      "amount": 186000,
+      "category": "Published first-year tuition/hostel package",
+      "note": "See additional uniform/book charges, printed p.80"
+    }
+  },
+  {
+    "id": 44,
+    "slug": "jct-institutions",
+    "name": "JCT Institutions",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Polytechnic"
+    ],
+    "printedPage": 81,
+    "pdfPage": 83,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "Biomedical",
+      "Petroleum Engineering",
+      "Arts & Science"
+    ],
+    "feeExample": null
+  },
+  {
+    "id": 45,
+    "slug": "ssm-college-of-engineering",
+    "name": "SSM College of Engineering",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 84,
+    "pdfPage": 86,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": null
+  },
+  {
+    "id": 46,
+    "slug": "ssm-college-of-pharmacy",
+    "name": "SSM College of Pharmacy",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Pharmacy",
+    "streams": [
+      "Pharmacy"
+    ],
+    "printedPage": 85,
+    "pdfPage": 87,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "B.Pharm",
+      "Pharm.D",
+      "D.Pharm",
+      "BPT"
+    ],
+    "feeExample": null
+  },
+  {
+    "id": 47,
+    "slug": "mother-theresa-group-of-institutions",
+    "name": "Mother Theresa Group of Institutions",
+    "city": "Pudukkottai",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Healthcare"
+    ],
+    "printedPage": 86,
+    "pdfPage": 88,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "CSE / ECE / AI&DS – first year",
+      "amount": 65000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Engineering, printed p.86"
+    }
+  },
+  {
+    "id": 48,
+    "slug": "kongunadu-college-of-engineering-technology",
+    "name": "Kongunadu College of Engineering & Technology",
+    "city": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 88,
+    "pdfPage": 90,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "Agricultural Engineering – first year",
+      "amount": 95000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.88"
+    }
+  },
+  {
+    "id": 49,
+    "slug": "thittakudi-sengunthar-group-of-institutions",
+    "name": "Thittakudi Sengunthar Group of Institutions",
+    "city": "Cuddalore",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Polytechnic"
+    ],
+    "printedPage": 89,
+    "pdfPage": 91,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.Tech AI&DS / IT / CSE – first year",
+      "amount": 60000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.89"
+    }
+  },
+  {
+    "id": 50,
+    "slug": "revathi-college-of-nursing",
+    "name": "Revathi College of Nursing",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Nursing",
+    "streams": [
+      "Nursing"
+    ],
+    "printedPage": 91,
+    "pdfPage": 93,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "B.Sc. Nursing",
+      "BPT",
+      "OTAT",
+      "RIT",
+      "MLT"
+    ],
+    "feeExample": {
+      "program": "B.Sc. OTAT / CT – first year",
+      "amount": 250000,
+      "category": "Published first-year fee",
+      "note": "Subsequent year fees differ; printed p.91"
+    }
+  },
+  {
+    "id": 51,
+    "slug": "tagore-engineering-college",
+    "name": "Tagore Engineering College",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 92,
+    "pdfPage": 94,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "AI&DS / CSE / IT – first year",
+      "amount": 70000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.92"
+    }
+  },
+  {
+    "id": 52,
+    "slug": "cms-college-of-engineering",
+    "name": "CMS College of Engineering",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 93,
+    "pdfPage": 95,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "CSE / AI&ML / ECE / Cyber Security",
+      "amount": 80000,
+      "category": "BC/MBC/OC · Annual college fee",
+      "note": "Other expenses, printed p.93"
+    }
+  },
+  {
+    "id": 53,
+    "slug": "christ-the-king-engineering-college",
+    "name": "Christ the King Engineering College",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 94,
+    "pdfPage": 96,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.Tech CSE – first year",
+      "amount": 105000,
+      "category": "Management tuition fee",
+      "note": "See government quota, discounts and hostel fees, printed p.94"
+    }
+  },
+  {
+    "id": 54,
+    "slug": "mahabharathi-engineering-college",
+    "name": "Mahabharathi Engineering College",
+    "city": "Villupuram",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 95,
+    "pdfPage": 97,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "CSE / AI&DS – first year",
+      "amount": 70000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.95"
+    }
+  },
+  {
+    "id": 55,
+    "slug": "avs-engineering-college",
+    "name": "AVS Engineering College",
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 96,
+    "pdfPage": 98,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "CSE / AI&ML / AI – first year",
+      "amount": 110000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.96"
+    }
+  },
+  {
+    "id": 56,
+    "slug": "vellalar-group-of-institutions",
+    "name": "Vellalar Group of Institutions",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Pharmacy",
+    "streams": [
+      "Pharmacy"
+    ],
+    "printedPage": 97,
+    "pdfPage": 99,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "B.Pharm",
+      "D.Pharm",
+      "BPT",
+      "Pharm.D",
+      "M.Pharm"
+    ],
+    "feeExample": {
+      "program": "B.Pharm",
+      "amount": 140000,
+      "category": "GQ / MQ yearly fee",
+      "note": "Published pharmacy fee, printed p.97"
+    }
+  },
+  {
+    "id": 57,
+    "slug": "shivani-engineering-college",
+    "name": "Shivani Engineering College",
+    "city": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 98,
+    "pdfPage": 100,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "AI&DS / IT / CSE – first year",
+      "amount": 65000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.98"
+    }
+  },
+  {
+    "id": 58,
+    "slug": "sri-rengeswarar-college-of-nursing",
+    "name": "Sri Rengeswarar College of Nursing",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Nursing",
+    "streams": [
+      "Nursing"
+    ],
+    "printedPage": 98,
+    "pdfPage": 100,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "B.Sc. Nursing"
+    ],
+    "feeExample": {
+      "program": "Nursing tuition including hostel",
+      "amount": 180000,
+      "category": "Published yearly package",
+      "note": "Admission fee separate, printed p.98"
+    }
+  },
+  {
+    "id": 59,
+    "slug": "dhaanish-ahmed-institute-of-technology",
+    "name": "Dhaanish Ahmed Institute of Technology",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 99,
+    "pdfPage": 101,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "AI&DS / IT / CSE / AI&ML – first year",
+      "amount": 100000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.99"
+    }
+  },
+  {
+    "id": 60,
+    "slug": "varuvan-vadivelan-institute-of-technology",
+    "name": "Varuvan Vadivelan Institute of Technology",
+    "city": "Dharmapuri",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 100,
+    "pdfPage": 102,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "AI&DS / IT / CSE – first year",
+      "amount": 65000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.100"
+    }
+  },
+  {
+    "id": 61,
+    "slug": "jkk-munirajah-college-of-pharmacy",
+    "name": "JKK Munirajah College of Pharmacy",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Pharmacy",
+    "streams": [
+      "Pharmacy"
+    ],
+    "printedPage": 101,
+    "pdfPage": 103,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "B.Pharm",
+      "D.Pharm",
+      "M.Pharm",
+      "B.Sc. Nursing",
+      "Physiotherapy"
+    ],
+    "feeExample": {
+      "program": "B.Pharm",
+      "amount": 110000,
+      "category": "Published annual fee",
+      "note": "Admission/registration extras, printed p.101"
+    }
+  },
+  {
+    "id": 62,
+    "slug": "shreenivasa-engineering-college",
+    "name": "Shreenivasa Engineering College",
+    "city": "Dharmapuri",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 102,
+    "pdfPage": 104,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.E. CSE – first year",
+      "amount": 90000,
+      "category": "Management tuition fee",
+      "note": "One-time fees/other charges, printed p.102"
+    }
+  },
+  {
+    "id": 63,
+    "slug": "bharathiyar-institute-of-engineering-for-women",
+    "name": "Bharathiyar Institute of Engineering for Women",
+    "city": "Salem",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 104,
+    "pdfPage": 106,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "CSE / IT / AI&DS – first year",
+      "amount": 75000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.104"
+    }
+  },
+  {
+    "id": 64,
+    "slug": "sri-sakthi-institute-of-engineering-technology",
+    "name": "Sri Sakthi Institute of Engineering & Technology",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 104,
+    "pdfPage": 106,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "CSE / AI&DS – first year",
+      "amount": 300000,
+      "category": "Management quota",
+      "note": "Government quota differs, printed p.104"
+    }
+  },
+  {
+    "id": 65,
+    "slug": "hindusthan-college-of-engineering-perundurai",
+    "name": "Hindusthan College of Engineering (Perundurai)",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 105,
+    "pdfPage": 107,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "CSE / IT / AI&DS / ECE – first year",
+      "amount": 80000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Annual fee, printed p.105"
+    }
+  },
+  {
+    "id": 66,
+    "slug": "avinashilingam-institute-for-home-science-and-higher-education-for-women",
+    "name": "Avinashilingam Institute for Home Science and Higher Education for Women",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 106,
+    "pdfPage": 108,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "AI & Machine Learning",
+      "ECE",
+      "Food Technology"
+    ],
+    "feeExample": {
+      "program": "B.E. CSE – first year",
+      "amount": 125000,
+      "category": "Published annual fee",
+      "note": "Semester amounts listed; printed p.106"
+    }
+  },
+  {
+    "id": 67,
+    "slug": "vidyaa-vikas-college-of-engineering-technology",
+    "name": "Vidyaa Vikas College of Engineering & Technology",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 107,
+    "pdfPage": 109,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": {
+      "program": "B.E. CSE – first year",
+      "amount": 60000,
+      "category": "OC / BC / MBC / BCM college fee",
+      "note": "Hostel and other fees separate, printed p.107"
+    }
+  },
+  {
+    "id": 68,
+    "slug": "v-s-b-college-of-engineering-technical-campus",
+    "name": "V.S.B. College of Engineering Technical Campus",
+    "city": "Tamil Nadu",
+    "state": "Tamil Nadu",
+    "type": "Engineering",
+    "streams": [
+      "Engineering"
+    ],
+    "printedPage": 108,
+    "pdfPage": null,
+    "availableInFile": false,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": null
+  },
+  {
+    "id": 69,
+    "slug": "erode-arts-and-science-college",
+    "name": "Erode Arts and Science College",
+    "city": "Erode",
+    "state": "Tamil Nadu",
+    "type": "Arts & Science",
+    "streams": [
+      "Arts & Science"
+    ],
+    "printedPage": 109,
+    "pdfPage": null,
+    "availableInFile": false,
+    "bookletYear": "2026",
+    "courses": [],
+    "feeExample": null
+  },
+  {
+    "id": 70,
+    "slug": "ksr-educational-institutions",
+    "name": "KSR Educational Institutions",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Nursing",
+      "Pharmacy"
+    ],
+    "printedPage": 110,
+    "pdfPage": 110,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "AI & Data Science",
+      "ECE",
+      "IT",
+      "Cyber Security",
+      "MBA"
+    ],
+    "feeExample": {
+      "program": "CSE – first year",
+      "amount": 130000,
+      "category": "Government quota",
+      "note": "KSR CE 2nd College, printed p.110"
+    }
+  },
+  {
+    "id": 71,
+    "slug": "pgp-group-of-institution",
+    "name": "PGP Group of Institution",
+    "city": "Namakkal",
+    "state": "Tamil Nadu",
+    "type": "Multi-disciplinary",
+    "streams": [
+      "Engineering",
+      "Arts & Science",
+      "Nursing",
+      "Healthcare",
+      "Pharmacy",
+      "Polytechnic"
+    ],
+    "printedPage": 114,
+    "pdfPage": 114,
+    "availableInFile": true,
+    "bookletYear": "2026",
+    "courses": [
+      "CSE",
+      "IT",
+      "AI & Data Science",
+      "ECE",
+      "Mechanical",
+      "Civil",
+      "B.Sc. Nursing"
+    ],
+    "feeExample": {
+      "program": "CSE / IT / AI&DS – first year",
+      "amount": 90000,
+      "category": "BC/MBC/OC · Government quota",
+      "note": "Engineering college, printed p.114"
+    }
+  }
+]

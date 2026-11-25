@@ -1,0 +1,63 @@
+.theme-toggle{display:grid;place-items:center;flex:none;width:41px;height:41px;padding:0;border:1.5px solid #78dff7;border-radius:50%;background:linear-gradient(135deg,#e6fbff,#c7f3ff);color:#143955;cursor:pointer;transition:background .25s,color .25s,transform .25s}.theme-toggle:hover{transform:rotate(15deg)}.theme-toggle:focus-visible{outline:3px solid #0786ad;outline-offset:4px}
+@media(max-width:600px){.theme-toggle{width:34px;height:34px}.theme-toggle svg{width:18px;height:18px}}
+@media(max-width:380px){.reference-navbar .nav-actions{gap:4px}.reference-navbar .nav-enquire{padding-inline:7px}}
+html[data-theme="dark"]{color-scheme:dark;--primary:#0da3ce;--primary-dark:#68d6f0;--primary-darker:#a4eaff;--yellow:#fdc21e;--yellow-soft:#40371a;--navy:#eafaff;--ink:#f5fafc;--muted:#b4cbd6;--line:rgba(125,207,232,.2);--surface:#0b2233;--white:#102c3d;--sunstar-navy:#eafaff;--sunstar-blue-deep:#9ee9fa;--brand-charcoal:#f5fafc;--brand-gray:#b4cbd6;--brand-border:rgba(125,207,232,.2);--brand-offwhite:#0b2233;--ref-glass:linear-gradient(135deg,rgba(20,57,74,.94),rgba(10,31,46,.94));--ref-shadow:0 18px 48px rgba(0,0,0,.25),inset 0 1px rgba(125,207,232,.12);background:#071521}
+html[data-theme="dark"] body{background:#071521;color:#f5fafc}
+html[data-theme="dark"] main#main-content{background:#071521;background-image:radial-gradient(ellipse at 10% 12%,rgba(13,163,206,.16),transparent 45%),radial-gradient(ellipse at 90% 35%,rgba(7,107,138,.18),transparent 40%),linear-gradient(135deg,#071521,#0b2233 55%,#071521);background-size:140% 140%;animation:sunstar-dark-mesh 26s ease-in-out infinite alternate}
+@keyframes sunstar-dark-mesh{to{background-position:100% 50%}}
+html[data-theme="dark"] .site-header.reference-navbar{background:linear-gradient(115deg,#071b2a,#103c50,#081e2d)}
+html[data-theme="dark"] .site-header.reference-navbar .nav-inner{background:rgba(11,34,51,.92);border-color:var(--line);box-shadow:0 8px 30px rgba(0,0,0,.25),inset 0 1px rgba(125,207,232,.12)}
+html[data-theme="dark"] .theme-toggle,html[data-theme="dark"] .reference-navbar :is(.nav-search-toggle,.mobile-toggle){background:#12394c;border-color:rgba(125,207,232,.35);color:#dff8ff}
+html[data-theme="dark"] .reference-navbar .desktop-nav>a,html[data-theme="dark"] .reference-navbar .desktop-nav .college-nav-toggle{color:#e8f6fb}
+html[data-theme="dark"] .reference-navbar :is(.nav-active,a:hover){color:#75d9f1}
+html[data-theme="dark"] :is(.mobile-menu,.nav-search-panel,.college-nav-dropdown,.enquiry-popup,.counsellor-widget){background:#102c3d!important;color:#f5fafc!important;border-color:var(--line)!important;box-shadow:0 20px 55px rgba(0,0,0,.4)!important}
+html[data-theme="dark"] :is(.mobile-menu,.nav-search-panel,.college-nav-dropdown,.enquiry-popup,.counsellor-widget) :is(h2,h3,label,p,a,button){color:#e9f7fb}
+html[data-theme="dark"] .enquiry-popup-header{background:linear-gradient(120deg,#123b50,#102c3d);border-color:var(--line)}
+html[data-theme="dark"] .enquiry-popup-close{background:#12394c;color:#e9f7fb;border-color:var(--line)}
+html[data-theme="dark"] :is(.sun-ref-hero,.sun-ref-campaign-section,.course-explorer-section,.about-info-section,.enquiry-content-section,.bangalore-detail-section,.bangalore-detail-hero,.bangalore-directory-section,.faq-section,.abroad-section,.home-hero,.page-banner,.impact-section,.student-reviews-section){background:transparent!important}
+html[data-theme="dark"] :is(.sun-ref-facts,.sun-ref-search,.sun-ref-college-card,.sun-ref-college-banner,.college-card,.bangalore-college-card,.bangalore-course-card,.bangalore-info-card,.related-bangalore-card,.course-card,.course-programme-card,.course-detail-panel,.category-card,.service-card,.step-card,.detail-panel,.directory-filters,.directory-filter-bar,.bangalore-filters,.bangalore-course-filters,.course-explorer-filters,.search-filters,.enquiry-panel,.about-info-panel-shell,.about-purpose-card,.about-contact-card,.about-address-card,.career-guidance-card,.career-promise-card,.impact-stat-card,.student-review-card,.faq-item,.glass-card,.form-panel,.info-band,.facility-card){background:var(--ref-glass)!important;color:#f5fafc!important;border-color:var(--line)!important;box-shadow:var(--ref-shadow)!important}
+html[data-theme="dark"] :is(h1,h2,h3,h4,h5,h6){color:#f5fafc}
+html[data-theme="dark"] :is(p,small,label,li){color:#bdd1da}
+html[data-theme="dark"] :is(.sun-ref-facts,.sun-ref-college-card,.college-card,.bangalore-college-card,.course-card,.course-programme-card,.category-card,.service-card,.step-card,.detail-panel,.impact-stat-card,.student-review-card,.faq-item,.about-purpose-card,.about-contact-card,.about-address-card) :is(strong,h2,h3,h4,a){color:#f2fbff}
+html[data-theme="dark"] :is(input,select,textarea){background:#0a2332!important;color:#f5fafc!important;border-color:rgba(125,207,232,.3)!important}
+html[data-theme="dark"] :is(input,textarea)::placeholder{color:#9ab2be}
+html[data-theme="dark"] :is(input,select,textarea):focus-visible,html[data-theme="dark"] :is(a,button):focus-visible{outline:3px solid #78dff7;outline-offset:3px}
+html[data-theme="dark"] :is(.btn-yellow,.nav-enquire,.enquiry-popup .form-submit){color:#142c3a!important;background:#fdc21e!important}
+html[data-theme="dark"] :is(.institution-logo-frame){background:#fff!important}
+html[data-theme="dark"] :is(.why-badge,.career-checklist,.about-info-tab){background:#102c3d!important;color:#f5fafc!important;border-color:var(--line)!important}
+html[data-theme="dark"] :is(.why-badge,.career-checklist,.about-info-tab) :is(strong,span,h2,h3){color:#e9f7fb}
+html[data-theme="dark"] .footer{background:#06131e;color:#f5fafc}
+@media(prefers-reduced-motion:reduce){html[data-theme="dark"] main#main-content{animation:none}.theme-toggle{transition:none}}
+
+/* Dark surfaces and foreground roles, shared by forms, menus and cards. */
+html[data-theme="dark"]{--dark-bg:#071521;--dark-surface:#0b2233;--dark-glass:rgba(15,39,55,.94);--dark-raised:#14384a;--dark-text:#f5fafc;--dark-muted:#b8cbd6;--dark-accent:#80dff3;--dark-border:rgba(125,207,232,.22);--dark-error:#ffb4ae;--dark-success:#a9efd2;--dark-yellow:#fdc21e}
+html[data-theme="dark"] main .eyebrow,html[data-theme="dark"] .enquiry-popup-eyebrow{color:var(--dark-accent)!important}
+html[data-theme="dark"] :is(.about-info-tabs,.college-nav-links,.course-level-switch,.course-category,.course-category-toggle,.course-empty-state,.course-detail-facts>div,.course-college-offerings li,.course-college-offerings>p,.course-detail-close){background:var(--dark-glass)!important;color:var(--dark-text)!important;border-color:var(--dark-border)!important}
+html[data-theme="dark"] :is(.college-nav-links a,.course-category-toggle strong,.course-programme-title,.course-detail-facts strong,.course-subcategory h4,.course-level-switch button,.course-clear-filters){color:var(--dark-text)!important}
+html[data-theme="dark"] :is(.course-programme-duration,.course-programme-eligibility,.course-category-count,.course-source-note,.course-detail-facts small,.course-select>span,.course-fee-filter>span){color:var(--dark-muted)!important}
+html[data-theme="dark"] :is(.course-programme-actions button,.course-programme-actions a,.course-clear-filters,.course-level-switch button span,.course-category-count i,.course-level-tag){background:var(--dark-raised)!important;color:var(--dark-text)!important;border-color:var(--dark-border)!important}
+html[data-theme="dark"] .course-level-switch button.is-active,html[data-theme="dark"] .about-info-tab.is-active{background:#075b75!important;color:#fff!important;box-shadow:inset 4px 0 var(--dark-yellow)}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup){backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) .enquiry-form{background:transparent!important;color:var(--dark-text);border-color:var(--dark-border)}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) :is(.form-grid label,.consent-line,.form-note){color:var(--dark-text)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) .form-grid label small{color:var(--dark-muted)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) .form-grid label>span:not(.field-error){color:var(--dark-error)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) :is(input,select,textarea){background:var(--dark-bg)!important;color:var(--dark-text)!important;border:1px solid var(--dark-border)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) :is(input,select,textarea):focus{border-color:var(--dark-accent)!important;box-shadow:0 0 0 3px rgba(13,163,206,.3)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) :is(input,textarea)::placeholder{color:var(--dark-muted);opacity:1}
+html[data-theme="dark"] option{background:var(--dark-surface);color:var(--dark-text)}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) input[type="checkbox"]{accent-color:var(--dark-accent)}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) .field-error{color:var(--dark-error)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) [aria-invalid="true"]{border-color:var(--dark-error)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) .form-success{background:#123c35!important;color:var(--dark-success)!important;border-color:var(--dark-success)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) .form-success a{color:var(--dark-success)!important}
+html[data-theme="dark"] :is(.enquiry-panel,.enquiry-popup) .form-submit{background:linear-gradient(135deg,#ffdc61,var(--dark-yellow))!important;color:#102936!important;border-color:var(--dark-yellow)!important}
+html[data-theme="dark"] .enquiry-popup-header :is(h2,p){color:var(--dark-text)!important}
+html[data-theme="dark"] .enquiry-popup-close:hover{background:var(--dark-raised)!important;color:var(--dark-text)!important}
+html[data-theme="dark"] :is(.counsellor-body,.counsellor-contact-actions,.counsellor-chips,.counsellor-input){background:var(--dark-surface)!important;border-color:var(--dark-border)!important}
+html[data-theme="dark"] :is(.counsellor-help-card,.counsellor-select,.counsellor-chips a,.counsellor-input button,.counsellor-message.user>div){background:var(--dark-raised)!important;color:var(--dark-text)!important;border-color:var(--dark-border)!important}
+html[data-theme="dark"] :is(.counsellor-widget strong,.counsellor-widget p,.counsellor-widget small,.counsellor-time,.counsellor-powered){color:var(--dark-text)!important}
+html[data-theme="dark"] .counsellor-submit{background:var(--dark-yellow)!important;color:var(--dark-bg)!important}
+html[data-theme="dark"] .counsellor-widget :is(.counsellor-contact-actions a,.counsellor-input button[type="submit"]){color:#fff!important}
+html[data-theme="dark"] :is(.course-programme-card,.college-card,.bangalore-college-card,.enquiry-panel):hover{border-color:rgba(125,207,232,.45)!important}
+html[data-theme="dark"] main :is(h1,h2,h3) span,html[data-theme="dark"] .course-results-note strong{color:var(--dark-accent)!important}

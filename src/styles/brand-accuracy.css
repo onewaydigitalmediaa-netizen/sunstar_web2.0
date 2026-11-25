@@ -1,0 +1,186 @@
+/* SUN STAR official brand guide — site-wide, non-destructive visual upgrade.
+   60% white/off-white, 30% deep/sky blue, 10% sunny yellow.
+   Layered last so legacy page-specific styles keep layout and behavior. */
+:root {
+  --primary: #0DA3CE;
+  --primary-dark: #076B8A;
+  --primary-darker: #076B8A;
+  --yellow: #FDC21E;
+  --yellow-soft: #FFF6D6;
+  --navy: #076B8A;
+  --ink: #1E1E1E;
+  --muted: #5F6B73;
+  --line: #E5E9EC;
+  --surface: #F8FBFC;
+  --white: #FFFFFF;
+  --sunstar-blue: #0DA3CE;
+  --sunstar-blue-deep: #076B8A;
+  --sunstar-navy: #076B8A;
+  --sunstar-yellow: #FDC21E;
+  --brand-sky: #0DA3CE;
+  --brand-deep: #076B8A;
+  --brand-ice: #E6F6FB;
+  --brand-gold: #E0A800;
+  --brand-light-gold: #FFF6D6;
+  --brand-charcoal: #1E1E1E;
+  --brand-gray: #5F6B73;
+  --brand-border: #E5E9EC;
+  --brand-offwhite: #F8FBFC;
+  --glass-bg: rgba(255,255,255,.78);
+  --glass-strong: rgba(255,255,255,.92);
+  --glass-border: rgba(255,255,255,.83);
+  --glass-shadow: 0 18px 55px rgba(7,107,138,.10), inset 0 1px rgba(255,255,255,.9);
+  --shadow: 0 18px 55px rgba(7,107,138,.09);
+  color-scheme: light;
+}
+html { background: #F8FBFC; }
+body { background: #F8FBFC; color: #1E1E1E; }
+/* Animate gradient positions rather than a full-screen backdrop-filter. */
+main#main-content {
+  background-color: #F8FBFC;
+  background-image:
+    radial-gradient(ellipse 54% 39% at 4% 12%, rgba(13,163,206,.17), transparent 78%),
+    radial-gradient(ellipse 42% 33% at 98% 45%, rgba(7,107,138,.13), transparent 78%),
+    radial-gradient(ellipse 34% 25% at 15% 92%, rgba(253,194,30,.085), transparent 78%),
+    linear-gradient(120deg, #F8FBFC 0%, #E6F6FB 48%, #FFFFFF 100%);
+  background-size: 125% 130%, 135% 140%, 130% 130%, 100% 100%;
+  animation: sunstar-mesh 27s ease-in-out infinite alternate;
+}
+@keyframes sunstar-mesh {
+  0% { background-position: 0% 0%, 100% 20%, 20% 100%, 0 0; }
+  100% { background-position: 23% 35%, 68% 75%, 70% 63%, 0 0; }
+}
+/* Opaque legacy sections previously concealed the site-wide gradient. */
+main .section-soft,
+main .course-explorer-section,
+main .student-reviews,
+main .faq-section,
+main .about-info-section {
+  background: linear-gradient(125deg,rgba(230,246,251,.82),rgba(255,255,255,.67) 52%,rgba(248,251,252,.83));
+}
+main .section:not(.abroad-section):not(.campus-video-section):not(.impact-stats),
+main .bangalore-detail-section { background-color: transparent; }
+/* Hero and page headings inherit the official colors while keeping their artwork. */
+main .home-hero,
+main .page-heading,
+main .bangalore-detail-hero {
+  background-image:
+    radial-gradient(circle at 91% 18%, rgba(253,194,30,.15), transparent 28%),
+    radial-gradient(circle at 9% 80%, rgba(13,163,206,.20), transparent 35%),
+    linear-gradient(125deg,#E6F6FB 0%,#F8FBFC 57%,#FFFFFF 100%);
+}
+main .home-hero { background-size: 140% 140%, 150% 140%, 100% 100%; }
+/* Frosted, readable cards and controls: broad visual surfaces, never image overlays. */
+main :is(
+  .college-card, .category-card, .step-card, .course-card, .course-programme-card,
+  .course-category, .course-explorer-filters, .course-level-switch,
+  .bangalore-course-card, .bangalore-info-card, .bangalore-profile-highlight,
+  .bangalore-facts, .bangalore-course-filters, .about-purpose-card,
+  .about-contact-card, .about-address-card, .about-info-tabs,
+  .about-info-panel-shell, .detail-panel, .contact-location,
+  .hero-search, .hero-float, .student-review-card, .faq-item,
+  .directory-filters, .directory-filter-bar, .search-filters,
+  .form-panel, .enquiry-form, .side-enquiry, .sidebar-note,
+  .admission-step, .about-value-grid article, .bangalore-placement-section
+) {
+  border-color: rgba(7,107,138,.16);
+  background-color: var(--glass-bg);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+main :is(.college-card,.category-card,.course-programme-card,.bangalore-course-card,.step-card,.about-purpose-card,.bangalore-profile-highlight):hover {
+  border-color: rgba(13,163,206,.46);
+  box-shadow: 0 24px 55px rgba(7,107,138,.16), inset 0 1px rgba(255,255,255,.95);
+}
+/* Keep fee information and forms opaque enough for accessible reading. */
+main :is(.course-programme-card,.course-category,.bangalore-course-card,.form-panel,.enquiry-form,.detail-panel) {
+  background: linear-gradient(140deg,rgba(255,255,255,.94),rgba(230,246,251,.76));
+}
+main :is(.course-explorer-filters,.bangalore-course-filters,.hero-search,.directory-filters,.directory-filter-bar) {
+  background: linear-gradient(110deg,rgba(255,255,255,.92),rgba(230,246,251,.70));
+}
+/* Explicit colors for critical CTAs and visible focus states. */
+.btn-primary, .nav-enquire, main .course-level-switch button.is-active {
+  background: linear-gradient(120deg,#076B8A 0%,#0DA3CE 100%);
+  color: #FFFFFF;
+  border-color: transparent;
+  box-shadow: 0 10px 24px rgba(7,107,138,.20);
+}
+.btn-primary:hover, .nav-enquire:hover { background: linear-gradient(120deg,#075b76,#076B8A); color:#FFFFFF; }
+.btn-yellow { background: linear-gradient(120deg,#FDC21E,#E0A800); color:#1E1E1E; }
+.btn-yellow:hover { background: #E0A800; color:#1E1E1E; }
+.btn-outline { border-color: rgba(7,107,138,.24); background: rgba(255,255,255,.82); color:#076B8A; }
+:where(a,button,input,select,textarea):focus-visible {
+  outline: 3px solid #E0A800;
+  outline-offset: 3px;
+}
+::selection { background:#FDC21E; color:#1E1E1E; }
+/* Header / footer and identifiable design system text. */
+.site-header { background:rgba(255,255,255,.91); border-bottom:1px solid rgba(7,107,138,.12); box-shadow:0 8px 35px rgba(7,107,138,.08); backdrop-filter:blur(15px); -webkit-backdrop-filter:blur(15px); }
+.top-strip { background:#076B8A; }
+.desktop-nav :is(a,.college-nav-toggle):hover,
+.desktop-nav .nav-active,
+.mobile-menu .nav-active { color:#076B8A; }
+.desktop-nav a.nav-active::after,.nav-indicator { background:linear-gradient(90deg,#0DA3CE,#FDC21E); }
+.mobile-menu { background:rgba(255,255,255,.96); }
+.site-footer { background-color:#076B8A; }
+.eyebrow { color:#076B8A; }
+.eyebrow.light { color:#FFF6D6; }
+.hero-copy h1 em,
+.section-heading h2 span,
+.why-copy h2 span,
+.admission-layout h2 span,
+.contact-info h2 span,
+.about-intro h2 span,
+.form-panel-heading h2 span,
+.abroad-service-grid h2 span {
+  background:linear-gradient(105deg,#076B8A,#0DA3CE);
+  color:transparent;
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+main :is(.course-category,.course-programme-card,.bangalore-info-card) :is(h2,h3,strong),
+main :is(.about-info-heading,.about-info-copy) :is(h1,h2) {color:#076B8A;}
+main :is(.course-category,.course-programme-card,.bangalore-info-card) p {color:#5F6B73;}
+/* Preserve meaningful image dark overlays and accessible light-on-dark captions. */
+main .detail-banner-content :is(h1,p),
+main .impact-stats :is(h2,h3,strong),
+main .abroad-section :is(h2,h3) { color:#FFFFFF; }
+main .impact-stats .impact-number { color:#FFFFFF; }
+/* Responsive glass: reduce expensive blur on small/mobile GPUs. */
+@media(max-width:767px) {
+  main#main-content { background-size:100% 100%; animation-duration:34s; }
+  main :is(.college-card,.category-card,.step-card,.course-card,.course-programme-card,.course-category,.bangalore-course-card,.bangalore-facts,.form-panel,.hero-search) {
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
+  }
+  .site-header { backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); }
+  .container { width:min(100% - 32px,1200px); }
+  main :is(.course-explorer-filters,.bangalore-course-filters) {min-width:0;}
+}
+@media(prefers-reduced-motion:reduce) {
+  main#main-content {animation:none !important;}
+  main .home-hero {animation:none !important;}
+  *,*::before,*::after { scroll-behavior:auto !important; }
+}
+/* The old course category pink/purple/green accents now share the official palette. */
+main :is(.category-aqua,.category-pink,.category-peach,.category-lavender,.category-mint,.category-sky) {
+  background:linear-gradient(135deg,rgba(255,255,255,.90),rgba(230,246,251,.73));
+}
+main :is(.category-aqua,.category-pink,.category-peach,.category-lavender,.category-mint,.category-sky) .category-symbol {
+  color:#076B8A;
+  background:linear-gradient(135deg,#E6F6FB,#FFF6D6);
+}
+main :is(.category-aqua,.category-pink,.category-peach,.category-lavender,.category-mint,.category-sky):nth-child(3n) .category-symbol {
+  color:#1E1E1E;
+  background:#FDC21E;
+}
+main .course-programme-actions :is(button,a):hover,
+main .course-category-toggle:hover {background:rgba(230,246,251,.85);color:#076B8A;}
+/* Chat controls use the same sky/deep-blue identity, without changing widget behavior. */
+.counsellor-input button[type=submit],.counsellor-input .voice-send {background:#076B8A;color:#FFFFFF;}
+.counsellor-input button[type=submit]:hover,.counsellor-input .voice-send:hover {background:#0DA3CE;}
+@media (forced-colors: active) {
+  main :is(.glass-card,.college-card,.course-programme-card,.bangalore-course-card) {border:1px solid CanvasText;}
+}

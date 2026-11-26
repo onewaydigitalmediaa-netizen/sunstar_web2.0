@@ -1,5 +1,6 @@
 import React from 'react';
 import {ExternalLink,MapPin,Star} from 'lucide-react';
+import Reveal from './Reveal.jsx';
 import '../styles/student-reviews.css';
 
 const reviewGroups=[
@@ -24,14 +25,14 @@ function ReviewCard({review,source}){
 }
 
 export default function StudentReviews(){
- return <section className="section student-reviews" aria-labelledby="student-reviews-title">
+ return <Reveal as="section" className="section student-reviews" amount={0.1} aria-labelledby="student-reviews-title">
   <div className="container">
-   <div className="section-heading student-reviews-heading"><div><span className="eyebrow">STUDENT EXPERIENCES</span><h2 id="student-reviews-title">What Students Say</h2><p>Perspectives from students at Bangalore and Tamil Nadu colleges.</p></div><span className="student-reviews-count"><Star size={16} fill="currentColor"/> 6 student reviews</span></div>
+   <div className="section-heading student-reviews-heading"><div><span className="eyebrow">STUDENT EXPERIENCES</span><h2 id="student-reviews-title">Student perspectives on campus life</h2><p>Perspectives from students at Bangalore and Tamil Nadu colleges.</p></div><span className="student-reviews-count"><Star size={16} fill="currentColor"/> 6 student reviews</span></div>
    <p className="student-reviews-note">Paraphrased from public student reviews on Collegedunia. Ratings and experiences are individual opinions.</p>
    <div className="student-review-groups">{reviewGroups.map(group=><section className="student-review-group" key={group.region} aria-label={`${group.region} student reviews`}>
     <div className="student-review-group-heading"><div><span>{group.region}</span><h3>{group.college}</h3><small><MapPin size={13}/>{group.location}</small></div><a href={group.href} target="_blank" rel="noreferrer">Read all reviews <ExternalLink size={14}/></a></div>
     <div className="student-review-grid">{group.reviews.map(review=><ReviewCard key={review.student} review={review} source={group.href}/>)}</div>
    </section>)}</div>
   </div>
- </section>;
+ </Reveal>;
 }

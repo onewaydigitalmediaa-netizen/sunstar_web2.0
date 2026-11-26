@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Maximize2, X } from 'lucide-react';
 
 export default function CampusImageViewer({
@@ -9,39 +9,43 @@ export default function CampusImageViewer({
   className = '',
   imagePosition = 'center',
 }) {
+  const dialogRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     if (!isOpen) return undefined;
 
+    const dialog = dialogRef.current;
     const previousOverflow = document.body.style.overflow;
-    const closeOnEscape = (event) => {
-      if (event.key === 'Escape') setIsOpen(false);
-    };
-
     document.body.style.overflow = 'hidden';
-    window.addEventListener('keydown', closeOnEscape);
+    dialog.showModal();
+
     return () => {
+      if (dialog.open) dialog.close();
       document.body.style.overflow = previousOverflow;
-      window.removeEventListener('keydown', closeOnEscape);
     };
   }, [isOpen]);
 
+  function closeLightbox() {
+    dialogRef.current?.close();
+    setIsOpen(false);
+  }
+
   const lightbox = isOpen && (
-    <div
+    <dialog ref={dialogRef}
       className="campus-image-lightbox"
-      role="dialog"
+      onCancel={(event) => { event.preventDefault(); closeLightbox(); }}
       aria-modal="true"
       aria-label={`${alt} full view`}
       onMouseDown={(event) => {
-        if (event.target === event.currentTarget) setIsOpen(false);
+        if (event.target === event.currentTarget) closeLightbox();
       }}
     >
       <button
         className="campus-image-lightbox-close"
         type="button"
         aria-label="Close full image view"
-        onClick={() => setIsOpen(false)}
+        onClick={closeLightbox}
       >
         <X size={23} />
       </button>
@@ -49,7 +53,7 @@ export default function CampusImageViewer({
         <img src={src} alt={alt} style={{ objectPosition: imagePosition }} />
         {caption && <figcaption>{caption}</figcaption>}
       </figure>
-    </div>
+    </dialog>
   );
 
   if (variant === 'expand') {
@@ -80,7 +84,7 @@ export default function CampusImageViewer({
           <img
             src={src}
             alt={alt}
-            loading="eager"
+            loading="lazy"
             decoding="async"
             style={{ objectPosition: imagePosition }}
             onError={(event) => {

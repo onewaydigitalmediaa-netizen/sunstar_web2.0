@@ -14,7 +14,7 @@ export default function Header(){
  const [open,setOpen]=useState(false);
  const [searchOpen,setSearchOpen]=useState(false);
  const [query,setQuery]=useState('');
- const searchRoot=useRef(null),searchButton=useRef(null),searchInput=useRef(null);
+ const searchRoot=useRef(null),searchButton=useRef(null),searchInput=useRef(null),menuButton=useRef(null);
  const navigate=useNavigate();
  const loc=useLocation();
  const reduceMotion=useReducedMotion();
@@ -29,10 +29,10 @@ export default function Header(){
   document.addEventListener('keydown',escape);
   return()=>{document.removeEventListener('pointerdown',dismiss);document.removeEventListener('keydown',escape)};
  },[searchOpen]);
- useEffect(()=>{if(!open)return;const onKey=e=>{if(e.key==='Escape')setOpen(false)};document.addEventListener('keydown',onKey);const previous=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.removeEventListener('keydown',onKey);document.body.style.overflow=previous}},[open]);
+ useEffect(()=>{if(!open)return;const onKey=e=>{if(e.key==='Escape'){setOpen(false);menuButton.current?.focus()}};document.addEventListener('keydown',onKey);const previous=document.body.style.overflow;document.body.style.overflow='hidden';return()=>{document.removeEventListener('keydown',onKey);document.body.style.overflow=previous}},[open]);
  return <>
-  <div className="top-strip"><div className="container top-inner top-inner-announcement"><div className={`top-ticker${reduceMotion?' is-static':''}`} role="region" aria-label="For Admission Enquiry from Tamil Nadu and Bangalore, Call +91 9944204010  +91 9042964616"><div className="top-ticker-track">{tickerSequence()}</div></div></div></div>
-  <header className={`site-header reference-navbar${loc.pathname==='/'?' home-video-navbar':''}`}><div className="container nav-inner">
+  <div className="top-strip"><div className="container top-inner top-inner-announcement"><div className={`top-ticker${reduceMotion?' is-static':''}`} role="region" aria-label="Admissions phone numbers"><div className="top-ticker-track">{tickerSequence()}</div></div></div></div>
+  <header className={`site-header reference-navbar${loc.pathname==='/'?' home-navbar':''}`}><div className="container nav-inner">
    <Link to="/" className="brand" aria-label="Sun Star Educational Trust homepage"><img src="/assets/sunstar-logo.png" alt="SUN STAR Educational Trust"/><span className="brand-caption">EDUCATIONAL TRUST</span></Link>
    <nav className="desktop-nav" aria-label="Main navigation">{links.map(([href,label])=>href==='/colleges'?<ExploreCollegesNav key={href}/>:<NavLink key={href} end={href==='/'||href==='/services'} to={href} className={({isActive})=>navIsActive(href,isActive,loc.pathname,loc.hash)?'nav-active':''}>{({isActive})=>{const active=navIsActive(href,isActive,loc.pathname,loc.hash);return <>{label}{active&&<motion.span className="nav-indicator" layoutId="nav-indicator" transition={{type:'spring',stiffness:480,damping:34}}/>}</>}}</NavLink>)}</nav>
    <div className="nav-actions">
@@ -43,9 +43,9 @@ export default function Header(){
       <div className="nav-search-field"><input ref={searchInput} id="navbar-search-input" type="search" placeholder="College, city or course…" value={query} onChange={e=>setQuery(e.target.value)}/><button type="submit" aria-label="Search directory"><ArrowRight size={20}/></button></div>
      </form>}
     </div>
-    <Link to="/enquiry" className="btn btn-primary nav-enquire">Enquire Now <ArrowRight size={17}/></Link><button className="mobile-toggle" onClick={()=>{setSearchOpen(false);setOpen(v=>!v)}} aria-expanded={open} aria-label={open?'Close navigation':'Open navigation'}>{open?<X/>:<Menu/>}</button>
+    <Link to="/enquiry" className="btn btn-primary nav-enquire">Enquire Now <ArrowRight size={17}/></Link><button type="button" ref={menuButton} className="mobile-toggle" onClick={()=>{setSearchOpen(false);setOpen(v=>!v)}} aria-expanded={open} aria-label={open?'Close navigation':'Open navigation'}>{open?<X/>:<Menu/>}</button>
    </div>
   </div></header>
-  <AnimatePresence>{open&&<motion.div className="mobile-backdrop" onClick={()=>setOpen(false)} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:reduceMotion?0:.18}}><motion.nav className="mobile-menu" onClick={e=>e.stopPropagation()} aria-label="Mobile navigation" initial={reduceMotion?false:{x:36,opacity:.7}} animate={{x:0,opacity:1}} exit={reduceMotion?undefined:{x:36,opacity:.7}} transition={{duration:reduceMotion?0:.22,ease:'easeOut'}}><div className="mobile-menu-title">Navigate <button onClick={()=>setOpen(false)} aria-label="Close"><X size={20}/></button></div>{links.map(([href,label])=>href==='/colleges'?<ExploreCollegesNav key={href} mobile onNavigate={()=>setOpen(false)}/>:<NavLink to={href} key={href} end={href==='/'||href==='/services'} onClick={()=>setOpen(false)} className={({isActive})=>navIsActive(href,isActive,loc.pathname,loc.hash)?'nav-active':''}>{label}<ArrowUpRight size={16}/></NavLink>)}<Link className="btn btn-yellow" to="/about#enquiry" onClick={()=>setOpen(false)}>Get Admission Guidance</Link></motion.nav></motion.div>}</AnimatePresence>
+  <AnimatePresence>{open&&<motion.div className="mobile-backdrop" onClick={()=>setOpen(false)} initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:reduceMotion?0:.18}}><motion.nav className="mobile-menu" onClick={e=>e.stopPropagation()} aria-label="Mobile navigation" initial={reduceMotion?false:{x:36,opacity:.7}} animate={{x:0,opacity:1}} exit={reduceMotion?undefined:{x:36,opacity:.7}} transition={{duration:reduceMotion?0:.22,ease:'easeOut'}}><div className="mobile-menu-title">Navigate <button onClick={()=>setOpen(false)} aria-label="Close"><X size={20}/></button></div>{links.map(([href,label])=>href==='/colleges'?<ExploreCollegesNav key={href} mobile onNavigate={()=>setOpen(false)}/>:<NavLink to={href} key={href} end={href==='/'||href==='/services'} onClick={()=>setOpen(false)} className={({isActive})=>navIsActive(href,isActive,loc.pathname,loc.hash)?'nav-active':''}>{label}<ArrowUpRight size={16}/></NavLink>)}<Link className="btn btn-yellow" to="/enquiry" onClick={()=>setOpen(false)}>Get Admission Guidance</Link></motion.nav></motion.div>}</AnimatePresence>
  </>
 }

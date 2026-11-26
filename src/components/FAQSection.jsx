@@ -4,6 +4,7 @@ import {ChevronDown} from 'lucide-react';
 import Reveal from './Reveal.jsx';
 
 const questions=[
+ ['What should I have ready for a counselling conversation?','Start with your preferred subjects, locations and budget. If you have a shortlist or questions about eligibility or fees, include them in your enquiry.'],
  ['Where does the college information come from?','The directory is based on information collected by SUN STAR. Confirm current courses, eligibility and availability with the institution before applying.'],
  ['How do I confirm current admission information?','Send an enquiry with your preferred college and course. The SUN STAR team can guide you on the questions to ask the institution.'],
  ['How do I ask about a particular course or college?','Open the Enquiry page, choose a course or stream and add a preferred college. Your details are placed into a WhatsApp message for you to review and send to SUN STAR.'],

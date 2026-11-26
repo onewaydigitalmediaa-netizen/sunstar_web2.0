@@ -3,18 +3,7 @@ import {Link} from 'react-router-dom';
 import {ArrowRight,ArrowUpRight,GraduationCap} from 'lucide-react';
 import {COLLEGE_PHOTOS} from '../data/collegePhotos.js';
 
-const tamilLogos={
- 'avinashilingam-institute-for-home-science-and-higher-education-for-women':'avinashilingam.jpg',
- 'paavai-educational-institutions':'paavai.svg',
- 'mahendra-educational-institutions':'mahendra.png',
- 'excel-group-institutions':'excel.png',
- 'the-kavery-educational-institutions':'kavery.png',
- 'karpagam-group-of-institutions':'karpagam.png',
- 'hindustan-group-of-institutions':'hindustan.svg',
- 'erode-sengunthar-engineering-college':'erode-sengunthar.png',
- 'shree-venkateshwara-group-of-institutions':'venkateshwara.png',
- 'sengunthar-group-of-institution-tiruchengode':'sengunthar.png'
-};
+import {tamilLogos} from '../data/tamilFeaturedColleges.js';
 
 const enquiryLink=name=>`/enquiry?college=${encodeURIComponent(name)}`;
 

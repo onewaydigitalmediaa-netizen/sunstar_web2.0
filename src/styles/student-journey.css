@@ -1,0 +1,256 @@
+.student-journey {
+  background: linear-gradient(150deg, rgba(255,255,255,.58), rgba(230,246,251,.18));
+}
+
+.student-journey-heading .home-kicker {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.student-journey-heading h2 em {
+  color: var(--home-accent);
+  font-style: normal;
+}
+
+.student-journey-stage {
+  display: none;
+}
+
+.student-journey-track {
+  --marker-size: 2.5rem;
+  --track-gap: clamp(13px, 2vw, 24px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.student-journey-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--marker-size) minmax(0, 1fr);
+  align-items: start;
+  column-gap: var(--track-gap);
+  padding-bottom: 20px;
+}
+
+.student-journey-step:last-child {
+  padding-bottom: 0;
+}
+
+.student-journey-step:not(:last-child)::before,
+.student-journey-step:not(:last-child)::after {
+  position: absolute;
+  inset-block: calc(var(--marker-size) / 2) calc(var(--marker-size) / -2);
+  inset-inline-start: calc(var(--marker-size) / 2 - 1px);
+  width: 2px;
+  content: "";
+}
+
+.student-journey-step::before {
+  background: var(--home-line);
+}
+
+.student-journey-step::after {
+  background: var(--home-blue);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .42s cubic-bezier(.22, 1, .36, 1);
+}
+
+.student-journey-step[data-complete="true"]::after {
+  transform: scaleY(1);
+}
+
+.student-journey-marker {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: var(--marker-size);
+  height: var(--marker-size);
+  border: 1px solid var(--home-line);
+  border-radius: 50%;
+  background: var(--home-paper);
+  color: var(--home-accent);
+  font-weight: 750;
+  transition: background-color .24s, border-color .24s;
+}
+
+.student-journey-step[data-active="true"] .student-journey-marker {
+  background: var(--home-yellow);
+  border-color: var(--home-yellow);
+  color: #102d43;
+}
+
+.student-journey-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--home-line);
+  border-radius: 16px;
+  background: var(--ref-glass);
+  transition: border-color .28s, box-shadow .28s;
+}
+
+.student-journey-step[data-active="true"] .student-journey-card {
+  border-color: var(--home-accent);
+  box-shadow: var(--home-shadow);
+}
+
+.student-journey-copy {
+  padding: clamp(14px, 2.4vw, 26px);
+}
+
+.student-journey-copy h3 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  line-height: 1.12;
+  letter-spacing: -.026em;
+  text-wrap: balance;
+}
+
+.student-journey-copy p {
+  max-width: 55ch;
+  margin: 9px 0 6px;
+}
+
+.student-journey-copy .home-link {
+  min-height: 44px;
+}
+
+.student-journey-frame,
+.student-journey-inline-photo {
+  position: relative;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  aspect-ratio: 1.85;
+  background: var(--home-wash);
+}
+
+.student-journey-frame img,
+.student-journey-inline-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-journey-frame figcaption,
+.student-journey-inline-photo figcaption {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  padding: 28px 12px 10px;
+  background: linear-gradient(transparent, rgba(8, 31, 46, .96));
+  color: #fff;
+  font-size: .8125rem;
+  font-weight: 650;
+}
+
+@media (max-width: 420px) {
+  .student-journey-track { --marker-size: 2rem; --track-gap: 9px; }
+}
+
+@media (min-width: 900px) and (min-height: 620px) and (prefers-reduced-motion: no-preference) {
+  .student-journey-layout {
+    display: grid;
+    grid-template-columns: minmax(0,1.1fr) minmax(0,1fr);
+    gap: clamp(24px, 5vw, 70px);
+    align-items: start;
+  }
+
+  .student-journey-stage {
+    position: sticky;
+    top: 116px;
+    display: block;
+    min-width: 0;
+    max-height: min(440px, calc(100vh - 158px));
+    aspect-ratio: 1.38;
+    overflow: hidden;
+    isolation: isolate;
+    border: 1px solid var(--home-line);
+    border-radius: 22px;
+    background: var(--home-ink);
+    box-shadow: var(--ref-shadow);
+  }
+
+  .student-journey-frame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .42s ease, visibility 0s .42s;
+  }
+
+  .student-journey-frame[data-active="true"] {
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  .student-journey-frame figcaption {
+    padding: 42px 21px 17px;
+    font-size: .875rem;
+  }
+
+  .student-journey-inline-photo {
+    display: none;
+  }
+
+  .student-journey-step {
+    min-height: 224px;
+    padding-bottom: 26px;
+  }
+
+  .student-journey-step[data-active="true"] h3 {
+    animation: student-journey-title-in .36s cubic-bezier(.22, 1, .36, 1) both;
+  }
+}
+
+@keyframes student-journey-title-in {
+  from { opacity: .76; transform: translateY(5px); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-intro-line {
+    display: inline-block;
+    animation: student-hero-reveal .65s cubic-bezier(.22, 1, .36, 1) both;
+  }
+
+  .home-intro-line + .home-intro-line { animation-delay: 70ms; }
+
+  .home-intro-copy > p {
+    animation: student-hero-support-in .55s .12s cubic-bezier(.22, 1, .36, 1) both;
+  }
+}
+
+@keyframes student-hero-reveal {
+  from { opacity: 0; clip-path: inset(0 0 100%); transform: translateY(8px); }
+  to { opacity: 1; clip-path: inset(0 -4px -12px); transform: translateY(0); }
+}
+
+@keyframes student-hero-support-in {
+  from { opacity: 0; transform: translateY(7px); }
+}
+
+#home-colleges {
+  scroll-margin-top: 105px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .student-journey-step::after { display: none; }
+  .student-journey :is(.student-journey-card, .student-journey-marker) { transition: none; }
+  .student-journey-step[data-active="true"] .student-journey-card {
+    border-color: var(--home-line);
+    box-shadow: none;
+  }
+  .student-journey-step[data-active="true"] .student-journey-marker {
+    background: var(--home-paper);
+    border-color: var(--home-line);
+    color: var(--home-accent);
+  }
+}

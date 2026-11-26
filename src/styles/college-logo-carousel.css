@@ -1,0 +1,98 @@
+.college-logo-section {
+  margin-top: clamp(28px, 5vw, 56px);
+  min-width: 0;
+}
+
+.college-logo-heading {
+  margin-bottom: 8px;
+}
+
+.college-logo-heading h2 {
+  margin: 0;
+  text-align: center;
+  color: var(--navy);
+  font-size: clamp(1.65rem, 4.4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -.035em;
+}
+
+.college-logo-heading h2 span {
+  color: var(--primary-dark);
+}
+
+.college-logo-viewport {
+  --logo-gap: clamp(10px, 1.5vw, 18px);
+  container-type: inline-size;
+  overflow: hidden;
+  padding-block: 8px 16px;
+}
+
+.college-logo-track {
+  display: flex;
+  width: max-content;
+  animation: college-logo-scroll var(--logo-duration) linear infinite;
+}
+
+@media (hover: hover) {
+  .college-logo-viewport:hover .college-logo-track {
+    animation-play-state: paused;
+  }
+}
+
+.college-logo-list {
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100cqw;
+  gap: var(--logo-gap);
+  margin: 0;
+  padding: 0 var(--logo-gap) 0 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.college-logo-card {
+  display: grid;
+  place-items: center;
+  flex: 1 0 clamp(132px, 15vw, 174px);
+  height: clamp(84px, 10vw, 110px);
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--ref-glass);
+  box-shadow: 0 5px 12px rgba(20, 44, 73, .09), inset 0 1px rgba(255, 255, 255, .7);
+}
+
+.college-logo-card img {
+  display: block;
+  width: 100%;
+  max-width: 148px;
+  height: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, .94);
+}
+
+@keyframes college-logo-scroll {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .college-logo-list[aria-hidden="true"] {
+    display: none;
+  }
+
+  .college-logo-track {
+    width: auto;
+    animation: none;
+  }
+
+  .college-logo-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 132px), 1fr));
+    padding: 0;
+  }
+}

@@ -6,7 +6,7 @@ export const SITE = {
   email: 'sunstarmedabroad@gmail.com',
   address: 'Salem Main Road, 4 Road, Opposite Supreme Mobiles, Dharmapuri, Tamil Nadu 636701',
   brochure: '/assets/sunstar-brochure.jpg',
-  feesPdf: '/documents/SUN-STAR-FEES-2026-27.pdf'
+  feesPdf: '/documents/SUN-STAR-FEES-2026.pdf'
 };
 export const whatsappUrl = (message = 'Hello SUN STAR Educational Trust, I would like admission guidance.') =>
   `https://wa.me/91${SITE.whatsapp}?text=${encodeURIComponent(message)}`;

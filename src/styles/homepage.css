@@ -1,0 +1,578 @@
+.sunstar-home {
+  --home-ink: #102d43;
+  --home-muted: #405967;
+  --home-accent: #076581;
+  --home-blue: #0da3ce;
+  --home-yellow: #fdc21e;
+  --home-paper: #fff;
+  --home-wash: #f0f8fb;
+  --home-line: #cbdfe8;
+  --home-shadow: 0 12px 30px rgba(16, 45, 67, .07);
+  --home-heading: clamp(28px, 4vw, 46px);
+  color: var(--home-ink);
+}
+
+html[data-theme="dark"] .sunstar-home {
+  --home-ink: #e9f8ff;
+  --home-muted: #b9d0da;
+  --home-accent: #91e0f5;
+  --home-paper: #102a3a;
+  --home-wash: #0b202f;
+  --home-line: #345364;
+  --home-shadow: 0 12px 30px rgba(0, 0, 0, .18);
+}
+
+.sunstar-home :is(h1, h2, h3) {
+  color: var(--home-ink);
+}
+
+.sunstar-home p {
+  color: var(--home-muted);
+  line-height: 1.65;
+}
+
+.sunstar-home :is(a, button, input, select):focus-visible {
+  outline: 3px solid var(--home-accent);
+  outline-offset: 3px;
+}
+
+.home-intro {
+  padding-block: clamp(34px, 5vw, 76px) 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, .26), transparent);
+}
+
+.home-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4.5vw, 68px);
+}
+
+.home-intro-copy,
+.home-college-search > div {
+  min-width: 0;
+}
+
+.home-kicker {
+  color: var(--home-accent);
+  font-size: .84rem;
+  font-weight: 750;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.home-intro h1 {
+  margin: 10px 0 16px;
+  font-size: clamp(2.35rem, 5.15vw, 4.8rem);
+  font-weight: 750;
+  line-height: 1;
+  letter-spacing: -.038em;
+  text-wrap: balance;
+}
+
+.home-intro h1 em {
+  color: var(--home-accent);
+  font-style: normal;
+}
+
+.home-intro-copy > p {
+  max-width: 52ch;
+  margin: 0 0 24px;
+  font-size: clamp(1rem, 1.4vw, 1.14rem);
+}
+
+.home-actions,
+.home-region-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.home-button,
+.home-search-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font: inherit;
+  font-size: .94rem;
+  font-weight: 750;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .2s, border-color .2s;
+}
+
+.home-button svg,
+.home-link svg,
+.home-course-card svg {
+  flex-shrink: 0;
+}
+
+.home-button-primary,
+.home-button-primary:hover {
+  color: #172c3c;
+  background-color: var(--home-yellow);
+}
+
+.home-button-primary:hover {
+  background-color: #ffd45a;
+}
+
+.home-button-secondary {
+  border-color: var(--home-line);
+  background-color: var(--home-paper);
+  color: var(--home-accent);
+}
+
+.home-button-secondary:hover {
+  border-color: var(--home-accent);
+  color: var(--home-accent);
+}
+
+.home-college-search {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 10px;
+  margin-top: 26px;
+  padding: 12px;
+  border: 1px solid var(--home-line);
+  border-radius: 14px;
+  background: var(--home-paper);
+  box-shadow: var(--home-shadow);
+}
+
+.home-college-search label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--home-ink);
+  font-size: .875rem;
+  font-weight: 750;
+}
+
+.home-college-search :is(input, select) {
+  width: 100%;
+  min-height: 46px;
+  padding: 8px 9px;
+  border: 1px solid var(--home-line);
+  border-radius: 8px;
+  background: var(--home-wash);
+  color: var(--home-ink);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.home-college-search input::placeholder {
+  color: var(--home-muted);
+}
+
+.home-college-search .home-search-submit {
+  min-height: 46px;
+  background: #076581;
+  color: #fff;
+}
+
+.home-search-submit:hover {
+  background: #084c63;
+}
+
+.home-intro-media {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #102d43;
+  box-shadow: var(--home-shadow);
+}
+
+.home-intro-media :is(img, video) {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.home-intro-media img {
+  object-fit: cover;
+  object-position: 52% center;
+}
+
+.home-intro-media video {
+  object-fit: contain;
+}
+
+.home-video-control {
+  position: absolute;
+  inset: 12px 12px auto auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, .4);
+  border-radius: 9px;
+  background: #102d43;
+  color: #fff;
+  font: inherit;
+  font-size: .875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.home-intro-media:has(img) .home-video-control {
+  inset: auto auto 14px 14px;
+}
+
+.sunstar-home .home-video-control:focus-visible,
+.sunstar-home .home-contact-panel a:focus-visible {
+  outline-color: #fff;
+}
+
+.home-resources {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+  margin-top: clamp(22px, 4vw, 44px);
+  padding-block: 12px;
+  border-top: 1px solid var(--home-line);
+}
+
+.home-resources a,
+.home-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: 7px;
+  color: var(--home-accent);
+  font-size: .94rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.home-resources a:hover,
+.home-link:hover,
+.home-guidance-note a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.home-link-muted {
+  color: var(--home-muted);
+}
+
+.home-band,
+.sunstar-home > :is(.student-reviews, .faq-section) {
+  padding-block: clamp(40px, 6vw, 80px);
+}
+
+.home-section-heading {
+  margin-bottom: clamp(16px, 2.5vw, 29px);
+}
+
+.home-section-heading h2,
+.home-abroad-panel h2,
+.home-contact-panel h2,
+.sunstar-home :is(.faq-heading, .student-reviews-heading) h2 {
+  margin: 0;
+  font-size: var(--home-heading);
+  line-height: 1.08;
+  letter-spacing: -.036em;
+  text-wrap: balance;
+}
+
+.home-section-heading p {
+  margin: 9px 0 0;
+}
+
+.home-heading-with-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 6px 20px;
+}
+
+.home-courses,
+.home-abroad,
+.sunstar-home > .faq-section {
+  background: rgba(240, 248, 251, .48);
+}
+
+.home-region-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(14px, 2.6vw, 28px);
+}
+
+.home-region-card,
+.home-course-card {
+  border: 1px solid var(--home-line);
+  background: var(--ref-glass);
+  border-radius: 15px;
+}
+
+.home-region-card {
+  overflow: hidden;
+  box-shadow: var(--home-shadow);
+}
+
+.home-region-card figure {
+  position: relative;
+  aspect-ratio: 2.15;
+  margin: 0;
+  overflow: hidden;
+  background: var(--home-wash);
+}
+
+.home-region-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+  transition: transform .38s ease;
+}
+
+.home-region-card:nth-child(2) img {
+  object-position: 66% center;
+}
+
+.home-region-card figcaption {
+  position: absolute;
+  inset: auto auto 10px 10px;
+  max-width: calc(100% - 20px);
+  padding: 5px 8px;
+  border-radius: 6px;
+  background: #102d43;
+  color: #fff;
+  font-size: .76rem;
+}
+
+.home-region-copy {
+  padding: clamp(16px, 2.5vw, 27px);
+}
+
+.home-region-copy h3,
+.home-fees h3 {
+  margin: 0;
+  font-size: clamp(1.15rem, 2.1vw, 1.6rem);
+  letter-spacing: -.018em;
+}
+
+.home-region-copy p,
+.home-fees p,
+.home-abroad-panel p,
+.home-contact-panel p {
+  margin: 6px 0 0;
+}
+
+.home-region-actions {
+  gap: 0 18px;
+  margin-top: 9px;
+}
+
+.sunstar-home .home-guidance-note {
+  justify-content: flex-start;
+  gap: 10px 14px;
+  padding: 11px 15px;
+  border: 1px solid var(--home-line);
+  border-radius: 12px;
+  background: var(--home-wash);
+  color: var(--home-muted);
+  font-size: .94rem;
+}
+
+.sunstar-home .home-guidance-note :is(svg, a) {
+  color: var(--home-accent);
+  flex-shrink: 0;
+}
+
+.sunstar-home .home-guidance-note > span {
+  flex: 1 1 34ch;
+}
+
+.sunstar-home .home-guidance-note a {
+  min-height: 44px;
+}
+
+.home-course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.home-course-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 100%;
+  min-height: 82px;
+  padding: 12px;
+  color: var(--home-ink);
+  text-decoration: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.home-course-card:hover {
+  border-color: var(--home-accent);
+  box-shadow: var(--home-shadow);
+  color: var(--home-ink);
+}
+
+.home-course-card strong,
+.home-course-card small {
+  display: block;
+}
+
+.home-course-card small {
+  margin-top: 2px;
+  color: var(--home-muted);
+  font-size: .84rem;
+}
+
+.home-course-arrow {
+  margin-left: auto;
+  color: var(--home-accent);
+}
+
+.home-icon {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: var(--home-wash);
+  color: var(--home-accent);
+}
+
+.home-fees,
+.home-abroad-panel,
+.home-contact-panel {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 13px 20px;
+  padding: clamp(16px, 3vw, 30px);
+  border-radius: 16px;
+}
+
+.home-fees {
+  margin-top: 14px;
+  border: 1px solid var(--home-line);
+  background: var(--home-wash);
+}
+
+.home-fees > div:first-of-type,
+.home-abroad-panel > div,
+.home-contact-panel > div:first-child {
+  flex: 1 1 30ch;
+}
+
+.home-fees-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 16px;
+}
+
+.home-abroad-panel {
+  align-items: flex-start;
+  border: 1px solid var(--home-line);
+  background: var(--home-paper);
+}
+
+.home-abroad-panel ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 17px;
+  margin: 14px 0 0;
+  padding-left: 16px;
+  color: var(--home-muted);
+}
+
+.home-contact-panel {
+  border-radius: 19px;
+  background: #102d43;
+}
+
+.home-contact-panel h2 {
+  color: #fff;
+}
+
+.home-contact-panel p {
+  max-width: 58ch;
+  color: #daeaf2;
+}
+
+.home-button-on-dark {
+  border-color: #a2c7d7;
+  color: #fff;
+}
+
+.home-button-on-dark:hover {
+  background-color: #284f65;
+  color: #fff;
+}
+
+.sunstar-home .faq-heading h2 span {
+  color: var(--home-accent);
+}
+
+.sunstar-home .faq-item button {
+  min-height: 54px;
+}
+
+.sunstar-home .college-logo-heading h2 span {
+  color: var(--home-accent);
+}
+
+.sunstar-home .college-logo-card {
+  backdrop-filter: none;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .home-region-card:is(:hover, :focus-within) img {
+    transform: scale(1.035);
+  }
+}
+
+@media (max-width: 1030px) {
+  .home-college-search { grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); }
+  .home-search-submit { grid-column: 1 / -1; }
+}
+
+@media (max-width: 760px) {
+  .home-intro-grid,
+  .home-region-grid { grid-template-columns: minmax(0, 1fr); }
+  .home-intro-media { aspect-ratio: 16 / 10; }
+  .home-course-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 490px) {
+  .home-course-grid { grid-template-columns: minmax(0, 1fr); }
+  .home-fees > .home-icon,
+  .home-abroad-panel > .home-icon { display: none; }
+  .home-contact-panel .home-actions { align-items: stretch; }
+  .sunstar-home .home-guidance-note { align-items: center; }
+  .sunstar-home .home-guidance-note > span { flex-basis: 75%; }
+}
+
+@media (max-width: 360px) {
+  .home-college-search { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sunstar-home :is(.home-button, .home-search-submit, .home-course-card, .home-region-card img) {
+    transition: none;
+  }
+}

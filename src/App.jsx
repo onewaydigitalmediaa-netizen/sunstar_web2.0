@@ -21,9 +21,33 @@ const TamilNaduTopColleges=lazy(loadTamilNaduTopColleges);
 const BangaloreTopColleges=lazy(loadBangaloreTopColleges);
 const BangaloreColleges=lazy(()=>import('./pages/BangaloreColleges.jsx'));
 const BangaloreCollegeDetail=lazy(()=>import('./pages/BangaloreCollegeDetail.jsx'));
-function ScrollToTop(){const {pathname,hash}=useLocation();useEffect(()=>{const id=hash?decodeURIComponent(hash.slice(1)):pathname==='/contact'?'contact':pathname==='/enquiry'?'enquiry':null;if(id)document.getElementById(id)?.scrollIntoView({behavior:'instant',block:'start'});else window.scrollTo({top:0,behavior:'instant'})},[pathname,hash]);return null}
+function ScrollToTop() {
+ const {pathname,hash}=useLocation();
+ useEffect(()=>{
+  if(!hash){
+   window.scrollTo({top:0,behavior:'instant'});
+   return;
+  }
+
+  let id=hash.slice(1);
+  try{id=decodeURIComponent(id)}catch{/* A malformed URL can still contain a literal ID. */}
+  const main=document.getElementById('main-content');
+  function scrollToTarget(){
+   const target=document.getElementById(id);
+   if(!target)return false;
+   target.scrollIntoView({behavior:'instant',block:'start'});
+   return true;
+  }
+
+  if(scrollToTarget()||!main)return;
+  const observer=new MutationObserver(()=>{if(scrollToTarget())observer.disconnect()});
+  observer.observe(main,{childList:true,subtree:true});
+  return()=>observer.disconnect();
+ },[pathname,hash]);
+ return null;
+}
 function AnimatedRoutes(){
  const location=useLocation();
  return <Suspense fallback={<div className="container section"><p>Loading page…</p></div>}><Routes location={location}><Route path="/" element={<Home/>}/><Route path="/colleges" element={<Colleges/>}/><Route path="/colleges/tamil-nadu-top-universities" element={<TamilNaduTopColleges/>}/><Route path="/colleges/bangalore-top-universities" element={<BangaloreTopColleges/>}/><Route path="/bangalore-colleges" element={<BangaloreColleges/>}/><Route path="/bangalore-colleges/:slug" element={<BangaloreCollegeDetail/>}/><Route path="/sun-star-med-abroad" element={<Navigate to="/services#mbbs-abroad" replace/>}/><Route path="/colleges/:slug" element={<CollegeDetail/>}/><Route path="/courses" element={<Courses/>}/><Route path="/admissions" element={<Admissions/>}/><Route path="/services" element={<Services/>}/><Route path="/career" element={<Career/>}/><Route path="/about" element={<About/>}/><Route path="/contact" element={<Contact/>}/><Route path="/enquiry" element={<Enquiry/>}/><Route path="*" element={<NotFound/>}/></Routes></Suspense>
 }
-export default function App(){return <><a className="skip-to-content" href="#main-content">Skip to main content</a><ScrollToTop/><Header/><main id="main-content"><AnimatedRoutes/></main><Footer/><FloatingActions/><CounsellorWidget/><EnquiryPopup/></>}
+export default function App(){return <><a className="skip-to-content" href="#main-content">Skip to main content</a><ScrollToTop/><Header/><main id="main-content" tabIndex={-1}><AnimatedRoutes/></main><Footer/><FloatingActions/><CounsellorWidget/><EnquiryPopup/></>}
